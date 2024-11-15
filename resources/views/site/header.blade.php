@@ -136,7 +136,7 @@ header {
     flex: 1;
     justify-content: space-between;
     list-style: none;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .left-links {
