@@ -136,17 +136,17 @@ header {
     flex: 1;
     justify-content: space-between;
     list-style: none;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 .left-links {
     justify-content: flex-end;
-    margin-right: 8rem; /* Space between left-links and logo */
+    margin-right: 20rem; /* Space between left-links and logo */
 }
 
 .right-links {
     justify-content: flex-start;
-    margin-left: 8rem; /* Space between right-links and logo */
+    margin-left: 20rem; /* Space between right-links and logo */
 }
 
 /* Centered logo styling */
@@ -162,7 +162,6 @@ header {
     top: -25px; /* Move the logo up to overflow the navbar */
     left: 50%;
     transform: translateX(-50%);
-    background-color: white;
     border-radius: 50%;
     padding: 0.5rem;
     z-index: 2; /* Ensure it stays above the navbar */
