@@ -3,9 +3,9 @@
     <!-- Desktop Navbar -->
     <nav class="navbar desktop-navbar">
         <ul class="navbar-links left-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/menu">Menu</a></li>
-            <li><a href="/locations">Locations</a></li>
+            <li><a href="/">Menü</a></li>
+            <li><a href="/menu">Mağza Lokasyonları</a></li>
+            <li><a href="/locations">Sosyal Sorumluluk</a></li>
             <li><a href="/franchise">Franchise</a></li>
         </ul>
         
@@ -14,10 +14,10 @@
         </div>
         
         <ul class="navbar-links right-links">
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/social-responsibility">Social</a></li>
+            <li><a href="/contact">Blog</a></li>
+            <li><a href="/blog">Galeri</a></li>
+            <li><a href="/gallery">İletişim</a></li>
+            <li><a href="/hikayemiz">Nostaljik Köşe<em></em></a></li>
         </ul>
     </nav>
 
