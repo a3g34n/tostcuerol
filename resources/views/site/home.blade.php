@@ -15,33 +15,105 @@
     </section>
 
     <!-- Values Section -->
-    <section class="values-section">
-        <h2 class="values-title">Hikayemiz</h2>
-        <p class="values-description">Bir tosttan daha fazlası: Samimiyet, paylaşım ve geçmişin sıcaklığıyla dolu bir yolculuk.</p>
-        <div class="values-container">
-            <div class="value-card">
-                <img src="{{ asset('images/sincerity.jpg') }}" alt="Samimiyet" class="value-image">
-                <h3 class="value-title">Samimiyet</h3>
-                <p class="value-text">
-                    Müşterilerimizi misafir olarak görüyor, onlarla duygusal bir bağ kuruyoruz. Her tost, geçmişin anılarını bugüne taşıyan bir davet.
-                </p>
-            </div>
-            <div class="value-card">
-                <img src="{{ asset('images/sharing.jpg') }}" alt="Paylaşmak" class="value-image">
-                <h3 class="value-title">Paylaşmak</h3>
-                <p class="value-text">
-                    Tostlarımız, yalnızca birer yiyecek değil; paylaşmanın, dostluğun ve birlikteliğin sembolü.
-                </p>
-            </div>
-            <div class="value-card">
-                <img src="{{ asset('images/nostalgia.jpg') }}" alt="Nostalji" class="value-image">
-                <h3 class="value-title">Nostalji</h3>
-                <p class="value-text">
-                    Geçmişin sıcaklığını bugünün sofralarına taşıyoruz. Her tost, eski dostlarla yeniden buluşturan bir köprü.
-                </p>
+  <!-- Values Section -->
+  <section class="values-section">
+    <h2 class="values-title">Marka Değerleri</h2>
+    <p class="values-description">
+        Sanayi Tostçusu olarak değerlerimizle müşterilerimize sıcak bir deneyim sunuyoruz.
+    </p>
+    <div class="values-container">
+        <!-- Samimiyet -->
+        <div class="value-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    
+                    <h3 class="value-title">Samimiyet</h3>
+                </div>
+                <div class="card-back">
+                    <p class="value-text">Biz müşterilerimizi birer misafir olarak görüyoruz. Onları yalnızca doyurmakla kalmıyoruz, onlarla duygusal bir bağ kuruyoruz. Her tost, geçmişin anılarını bugüne taşıyan bir davet.</p>
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Paylaşmak -->
+        <div class="value-card">
+            <div class="card-inner">
+                <div class="card-front">
+                   
+                    <h3 class="value-title">Paylaşmak</h3>
+                </div>
+                <div class="card-back">
+                    <p class="value-text">Tostlarımız yalnızca birer yiyecek değil; paylaşmanın, birlikteliğin ve dostluğun sembolü. Bir masada buluşan herkes markamızın en önemli parçası.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sorumluluk -->
+        <div class="value-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    
+                    <h3 class="value-title">Sorumluluk</h3>
+                </div>
+                <div class="card-back">
+                    <p class="value-text">Yalnızca kendi kazancımıza değil toplumun tamamına katkıda bulunmayı amaçlıyoruz. Eşit gıda erişimini destekleyen projelerle, daha iyi bir gelecek yaratmak için üzerimize düşeni yapıyoruz.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doyuruculuk -->
+        <div class="value-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    
+                    <h3 class="value-title">Doyuruculuk</h3>
+                </div>
+                <div class="card-back">
+                    <p class="value-text">Misafirlerimize dolu dolu bir lezzet sunuyoruz. Tostlarımız, gerçek anlamda tatmin edici ve samimi bir deneyim yaşatıyor</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Uygun Fiyat -->
+        <div class="value-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    
+                    <h3 class="value-title">Uygun Fiyat</h3>
+                </div>
+                <div class="card-back">
+                    <p class="value-text">Herkes için erişilebilir olmayı önemsiyoruz. Doyurucu ve uygun fiyatlı bir lezzet sunarak kaliteyi erişilebilir kılmak önceliğimiz.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nostalji -->
+        <div class="value-card">
+            <div class="card-inner">
+                <div class="card-front">
+                   
+                    <h3 class="value-title">Nostalji</h3>
+                </div>
+                <div class="card-back">
+                    <p class="value-text">Biz, geçmişin sıcaklığını bugünün sofralarına taşıyoruz. Her tost, müşterilerimizi eski dostlarla yeniden buluşturan bir köprü.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Topluluk -->
+        <div class="value-card">
+            <div class="card-inner">
+                <div class="card-front">
+                   
+                    <h3 class="value-title">Topluluk</h3>
+                </div>
+                <div class="card-back">
+                    <p class="value-text">Misafirlerimizi birer müşteri değil, topluluğumuzun bir parçası olarak görüyoruz. Hep birlikte büyüyen, birbirini destekleyen bir aile yaratmayı hedefliyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
 
 
@@ -93,7 +165,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(105, 31, 6, 0.6); /* Transparan kırmızı */
+        background-color: rgba(10, 10, 10, 0.6); /* Transparent dark gray */
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -182,7 +255,7 @@
     /* Values Section */
     .values-section {
         padding: 4rem 2rem;
-        background-color: #fff4e6; /* Açık krem */
+        background-color: #E9AD69; /* Açık krem */
         text-align: center;
     }
 
@@ -194,9 +267,9 @@
     }
 
     .values-description {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-family: 'Fira Sans Medium', sans-serif;
-        color: #907847; /* Zeytin yeşili */
+        color: #fff4e6; /* Zeytin yeşili */
         margin-bottom: 2rem;
         max-width: 800px;
         margin: 0 auto;
@@ -210,15 +283,79 @@
     }
 
     .value-card {
-        background-color: #e36e52; /* Yardımcı kırmızımsı ton */
-        color: #fff4e6; /* Açık krem */
-        border-radius: 8px;
-        padding: 2rem;
-        max-width: 300px;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Enables 3D effect */
+    margin: 1rem;
+}
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* Preserve 3D for child elements */
+    transition: transform 0.6s; /* Smooth flip animation */
+}
 
+.value-card:hover .card-inner {
+  
+    transform: rotateY(180deg);
+  
+}
+
+/* Front Face */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Ensures hidden side does not appear */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Front Face */
+.card-front {
+    background: #C55F2B; /* Nostalgic purple-pink gradient */
+    color: #fff4e6; /* Light cream text color */
+    transform: rotateY(0deg); /* Default face */
+}
+
+.card-front .card-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.card-front .value-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Back Face */
+.card-back {
+    background: #C55F2B; /* Nostalgic purple-pink gradient */
+    color : #fff4e6; /* Light cream text color */
+    transform: rotateY(180deg); /* Hidden by default */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 2px solid #C55F2B; /* Border matches front face */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.card-back .value-text {
+    color: #ffffff; /* Ensure white text for better contrast */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for readability */
+}
     .value-image {
         width: 100%;
         height: 200px;
@@ -229,16 +366,21 @@
     }
 
     .value-title {
-        font-size: 1.5rem;
-        font-family: 'Fira Sans Bold', sans-serif;
-        margin-bottom: 0.5rem;
-    }
+    font-size: 1.5rem;
+    font-family: 'Fira Sans Bold', sans-serif;
+    color: #fff4e6; /* Matches the background of the page */
+    margin-bottom: 0.5rem;
+}
 
     .value-text {
-        font-size: 1rem;
-        font-family: 'Fira Sans Book', sans-serif;
-        line-height: 1.5;
-    }
+    font-size: 1rem;
+    font-family: 'Fira Sans Book', sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Keeps text legible */
+}
+    
+
+    
 
     /* Mobil Uyumluluk */
     @media (max-width: 768px) {
@@ -250,5 +392,6 @@
             max-width: 90%;
         }
     }
+
 
 </style>
