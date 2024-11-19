@@ -47,11 +47,12 @@
 
 <style>
    /* Full-width header styling */
-/* Full-width header styling */
+/* Genel Header ve Navbar Ayarları */
 header {
     width: 100%;
-    background-color: #D99B60;
-    position: relative; 
+    background-color: #691f06; /* Ana renk: Koyu kırmızı */
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .desktop-navbar {
@@ -61,25 +62,22 @@ header {
     display: none;
 }
 
-/* Navbar styling */
+/* Desktop Navbar */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 2rem;
     position: relative;
     z-index: 1;
-    padding: 0.25rem 2rem;
 }
 
-/* Animation for navigation links */
 .navbar-links {
     display: flex;
     list-style: none;
-    gap: 2.0rem;
-    opacity: 0;
-    animation: navbarFadeIn 1s ease-in-out forwards;
-    animation-delay: 0.5s;
+    gap: 2rem;
 }
+
 
 .left-links li,
 .right-links li {
@@ -98,20 +96,15 @@ header {
 .left-links li:nth-child(4),
 .right-links li:nth-child(4) { animation-delay: 1s; }
 
-/* Styling for the links */
 .navbar-links li a {
-    position: relative;
     text-decoration: none;
-    color: white;
+    color: #e8ad69; /* Açık krem */
     font-weight: bold;
     font-size: 1.2rem;
-    padding: 0.25rem 0; /* Add padding for better spacing */
-    transition: color 0.3s ease; /* Smooth color transition */
-    white-space: nowrap;
+    transition: color 0.3s ease;
 }
-
 .navbar-links li a:hover {
-    color: #A3371A; /* Change text color on hover (e.g., gold color) */
+    color:  #c45e2b; /* Yardımcı renk: Kırmızımsı ton */
 }
 
 
@@ -199,26 +192,25 @@ header {
         display: none;
     }
 
+   /* Mobile Header */
     .mobile-header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
+        background-color: #691f06; /* Ana renk */
         padding: 1rem;
-        background-color: #D99B60;
-        position: relative;
+        justify-content: space-between;
+        align-items: center;
     }
+
 
     /* Toggle button styling */
     .navbar-toggle {
+        font-size: 1.5rem;
+        color: #fff4e6; /* Açık krem */
         background: none;
         border: none;
-        font-size: 1.5rem;
-        color: white;
         cursor: pointer;
-        position: absolute;
-        top: 15px;
-        left: 10px;
     }
+
 
     /* Centered mobile logo styling */
   
@@ -229,44 +221,46 @@ header {
     .mobile-menu {
         display: none;
         position: absolute;
-        top: 60px;
+        top: 0;
         left: 0;
-        right: 0;
-        background-color: #D99B60;
-        padding: 1rem 2rem;
-        z-index: 1;
-        padding-top: 100px;
+        width: 100%;
+        background-color: #691f06; /* Ana renk */
+        color: #fff4e6;
+        padding: 1rem;
+        z-index: 10;
+        text-align: center;
     }
 
     .mobile-menu.open {
         display: block;
     }
 
+
     .mobile-navbar-links {
         list-style: none;
         padding: 0;
         margin: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
     }
 
     .mobile-navbar-links li a {
-        color: white;
+        display: block;
+        padding: 1rem;
         text-decoration: none;
+        color: #fff4e6;
         font-size: 1.2rem;
         font-weight: bold;
+        transition: background-color 0.3s ease;
     }
 
     .mobile-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #D99B60;
-    padding: 1rem;
-    position: relative;
-    overflow: visible; /* Allow logo to overflow */
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #D99B60;
+        padding: 1rem;
+        position: relative;
+        overflow: visible; /* Allow logo to overflow */
+    }
 
 /* Toggle button positioning */
 .navbar-toggle {
@@ -283,17 +277,13 @@ header {
 
 /* Centered mobile logo with overflow effect */
 .mobile-logo {
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff4e6; /* Açık krem */
     border-radius: 50%;
     padding: 0.5rem;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-    top: 100px; /* Adjust to overflow the navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .mobile-logo img {
