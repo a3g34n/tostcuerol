@@ -266,8 +266,8 @@
 
     .carousel-images img {
         flex-shrink: 0;
-        width: 300px; /* Adjust the size for uniformity */
-        height: 450px;
+        width: 400px; /* Adjust the size for uniformity */
+        height: 550px;
         object-fit: cover; /* Maintains aspect ratio */
         border-radius: 5px; /* Optional rounded corners */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
