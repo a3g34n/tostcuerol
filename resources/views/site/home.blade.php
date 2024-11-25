@@ -449,6 +449,7 @@
 .custom-carousel-btn {
     position: absolute;
     top: 50%;
+    border: none; /* Remove any default border */
     transform: translateY(-50%);
     width: 50px; /* Adjust arrow width */
     height: 50px; /* Adjust arrow height */
