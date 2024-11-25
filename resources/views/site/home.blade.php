@@ -432,14 +432,14 @@
 }
 
 .custom-carousel-text h3 {
-    font-size: 2.4rem; /* Larger font for the title */
+    font-size: 2.8rem; /* Larger font for the title */
     font-weight: bold;
     margin: 0 0 1rem 0; /* Remove default margin except for the bottom */
     color: #691f06; /* Theme color */
 }
 
 .custom-carousel-text p {
-    font-size: 1.2rem; /* Font size for description */
+    font-size: 1.6rem; /* Font size for description */
     line-height: 1.6; /* Line height for better readability */
     margin: 0 0 1.5rem 0; /* Remove extra margins except bottom */
     color: #691f06 !important;
@@ -465,7 +465,7 @@
 }
 .custom-left-btn {
     left: 60px; /* Position the left arrow outside the container */
-    clip-path: polygon(0 50%, 100% 100%, 100% 0); /* Sol bakışlı üçgen oluştur */
+    clip-path: polygon(0 50%, 100% 100%, 100% 0); /* Reverse triangle direction */
 }
 
 
@@ -481,16 +481,17 @@
 }
 
 .custom-indicator {
-    width: 12px;
+    width: 12px; /* Adjust circle size */
     height: 12px;
-    background-color: #D99B60; /* Circle color matching */
-    border-radius: 50%;
+    border: 2px solid #691f06; /* Border color for the circle */
+    border-radius: 50%; /* Make the shape circular */
+    background-color: transparent; /* Transparent background by default */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transitions */
 }
-
 .custom-indicator.active {
-    background-color: #C45E2B; /* Active indicator color */
+    background-color: #691f06; /* Fill the active circle */
+    transform: scale(1.2); /* Slightly enlarge the active indicator */
 }
 
 
@@ -514,15 +515,15 @@
 }
 
 .custom-banner h2 {
-    font-size: 2.2rem; /* Daha büyük font boyutu */
+    font-size: 5.0rem; /* Daha büyük font boyutu */
     font-weight: bold;
     margin: 0;
     font-family: 'Fira Sans', sans-serif;
 }
 
 .custom-banner-logo {
-    max-height: 100px; /* Logonun boyutunu artır */
-    margin-left: 20px;
+    max-height: 400px; /* Logonun boyutunu artır */
+    margin-left: 80px;
 }
 
 .spacer {
