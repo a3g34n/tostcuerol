@@ -108,7 +108,8 @@
     font-size: 2.5rem;
     color: #691f06;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-top: 3rem; /* Add space above the title */
+    margin-bottom: 2rem; /* Space below the title remains the same */
 }
 
 .blog-container {

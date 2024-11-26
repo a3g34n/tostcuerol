@@ -1,4 +1,3 @@
-<!-- resources/views/site/home.blade.php -->
 @extends('layouts.app')
 
 @section('content')
@@ -6,43 +5,40 @@
 
 <section id="gallery">
     <div class="container gallery-container">
-        <h1 class="text-center mb-4">Our Menu Highlights</h1>
-        <div class="row g-3">
+        <div class="gallery-grid">
+            <!-- Title -->
+            <h1 class="gallery-title">Our Menu Highlights</h1>
+
             <!-- Gallery Items -->
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <img src="images/image1.jpeg" alt="Dish 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/image1.jpeg')">
+            <div>
+                <img src="{{ asset('images/image1.jpeg') }}"  alt="Dish 1" class="gallery-image" onclick="showImage('images/image1.jpeg')">
             </div>
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <img src="images/image2.jpg" alt="Dish 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/image2.jpg')">
+            <div>
+                <img src="{{ asset('images/image2.jpg') }}"  alt="Dish 2" class="gallery-image" onclick="showImage('images/image2.jpg')">
             </div>
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <img src="images/image3.jpeg" alt="Dish 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/image3.jpeg')">
+            <div>
+                <img src="{{ asset('images/image3.jpeg') }}"  alt="Dish 3" class="gallery-image" onclick="showImage('images/image3.jpeg')">
             </div>
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <img src="images/image4.jpeg" alt="Dish 4" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/image4.jpeg')">
+            <div>
+                <img src="{{ asset('images/image4.jpeg') }}"  alt="Dish 4" class="gallery-image" onclick="showImage('images/image4.jpeg')">
             </div>
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <img src="images/image5.jpg" alt="Dish 5" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/image5.jpg')">
+            <div>
+                <img src="{{ asset('images/image5.jpg') }}"  alt="Dish 5" class="gallery-image" onclick="showImage('images/image5.jpg')">
             </div>
-            <div class="col-md-4 col-sm-6 gallery-item">
-                <img src="images/image1.jpeg" alt="Dish 6" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('images/image1.jpeg')">
+            <div>
+                <img src="{{ asset('images/image6.jpeg') }}"  alt="Dish 6" class="gallery-image" onclick="showImage('images/image6.jpeg')">
             </div>
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <img id="modalImage" src="" alt="Large View" class="img-fluid">
-                </div>
-            </div>
-        </div>
+    <!-- Fullscreen Modal -->
+    <div id="fullscreenModal" class="fullscreen-modal" onclick="closeModal()">
+        <img id="fullscreenImage" src="" alt="Large View" class="fullscreen-image">
     </div>
 </section>
 
 @endsection
+
 
 <style>
     /* Global resets */
@@ -63,47 +59,72 @@
         max-width: 1200px;
     }
 
-    .gallery-item {
-        position: relative;
-        overflow: hidden;
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: start;
     }
 
-    .gallery-item img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s ease, border-radius 0.3s ease;
-        border-radius: 12px; /* Rounded corners */
+    .gallery-title {
+        grid-column: 1 / -1; /* Span across all columns */
+        text-align: center;
+        font-size: 2rem;
+        color: #691f06;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .gallery-image {
+        width: 400px;
+        height: 400px;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: pointer;
     }
 
-    .gallery-item:hover img {
-        transform: scale(1.05); /* Slight zoom effect on hover */
-        border-radius: 12px;
+    .gallery-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    /* Modal custom styles */
-    .modal-content {
-        background: transparent;
-        border: none;
-        box-shadow: none;
+    /* Fullscreen Modal */
+    .fullscreen-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
     }
 
-    .modal-body {
-        padding: 0;
+    .fullscreen-modal.active {
+        display: flex;
     }
 
-    #modalImage {
-        border-radius: 12px; /* Keep rounded corners in modal */
-        max-width: 100%;
-        max-height: 90vh;
-        object-fit: contain;
+    .fullscreen-image {
+        width: 800px;
+        height: 800px;
+        border-radius: 8px;
     }
 </style>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script>
-    // Function to change the modal image
+    // Function to display the selected image in full width
     function showImage(src) {
-        document.getElementById('modalImage').src = src;
+        const modal = document.getElementById('fullscreenModal');
+        const fullscreenImage = document.getElementById('fullscreenImage');
+        fullscreenImage.src = src;
+        modal.classList.add('active');
+    }
+
+    // Function to close the fullscreen modal
+    function closeModal() {
+        const modal = document.getElementById('fullscreenModal');
+        modal.classList.remove('active');
     }
 </script>
