@@ -9,11 +9,11 @@
    
         <section id="contact">
         <div class="contact-container">
-            <h2>Contact Us</h2>
+            <h2>Bizimle İletişime Geçin</h2>
             <form >
                 @csrf
                 <div class="form-group">
-                    <label for="name">Name Surname</label>
+                    <label for="name">İsim Soyisim</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
@@ -21,10 +21,10 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
+                    <label for="message">Mesaj</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit">Send</button>
+                <button type="submit">Gönder</button>
             </form>
         </div>
     </section>
