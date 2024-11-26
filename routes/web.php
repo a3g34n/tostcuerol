@@ -12,3 +12,7 @@ Route::get('/hikayemiz', function () {
 Route::get('/contact', function () {
     return view('site.contact');
 });
+
+Route::get('/franchise', function () {
+    return view('site.franchise');
+});

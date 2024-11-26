@@ -16,7 +16,7 @@
         <ul class="navbar-links right-links">
             <li><a href="/contact">Blog</a></li>
             <li><a href="/blog">Galeri</a></li>
-            <li><a href="/gallery">İletişim</a></li>
+            <li><a href="/contact">İletişim</a></li>
             <li><a href="/hikayemiz">Nostaljik Köşe<em></em></a></li>
         </ul>
     </nav>
