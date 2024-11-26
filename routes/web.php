@@ -8,3 +8,7 @@ Route::get('/', function () {
 Route::get('/hikayemiz', function () {
     return view('site.hikayemiz');
 });
+
+Route::get('/contact', function () {
+    return view('site.contact');
+});
