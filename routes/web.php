@@ -21,3 +21,11 @@ Route::get('/franchise', function () {
 Route::get('/locations', function () {
     return view('site.locations');
 });
+
+Route::get('/social', function () {
+    return view('site.social'); 
+});
+
+Route::get('/blog', function () {
+    return view('site.blog'); 
+});
