@@ -75,14 +75,7 @@
             color: #691f06; /* Ana renk */
             background-color: #FFF4E6; /* Set the entire body background color */
         }
-        /* Full-width header styling */
-        header {
-            width: 100%;
-            background-color: #D99B60;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem 2rem;
-        }
-      
+        
 
         
 .spacer {
@@ -91,13 +84,7 @@
 }
 
 
-        .navbar {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+       
         .custom-footer {
     background-color: #691F06; /* Footer color matching the example */
     color: #FFF4E6; /* Text color for the footer */

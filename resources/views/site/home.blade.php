@@ -150,14 +150,6 @@
             background-color: #FFF4E6; /* Set the entire body background color */
         }
 
-        .navbar {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
     /* Banner Section */
         .banner {
             position: relative;

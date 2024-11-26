@@ -145,36 +145,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Sağlı Sollu Sections */
-.section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 4rem;
-    gap: 2rem;
-}
-header {
-        width: 100%;
-        background-color: #D99B60;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 1.5rem 2rem;
-    }
-.section.reverse {
-    flex-direction: row-reverse;
-}
-
-.section h2 {
-    font-size: 2rem;
-    font-family: 'Fira Sans Heavy', sans-serif;
-    color: #691f06;
-    margin-bottom: 1rem;
-}
-
-.section p {
-    font-size: 1.2rem;
-    color: #907847;
-    line-height: 1.8;
-}
 
 /* Galeri */
 .gallery-section {

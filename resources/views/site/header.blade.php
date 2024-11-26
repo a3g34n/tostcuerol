@@ -66,12 +66,15 @@ header {
 /* Desktop Navbar */
 .navbar {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
     position: relative;
     z-index: 1;
+    max-width: 1800px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
+
 
 .navbar-links {
     display: flex;
