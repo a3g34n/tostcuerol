@@ -4,7 +4,7 @@
     <nav class="navbar desktop-navbar">
         <ul class="navbar-links left-links">
             <li><a href="/">Menü</a></li>
-            <li><a href="/menu">Mağza Lokasyonları</a></li>
+            <li><a href="/locations">Mağza Lokasyonları</a></li>
             <li><a href="/locations">Sosyal Sorumluluk</a></li>
             <li><a href="/franchise">Franchise</a></li>
         </ul>

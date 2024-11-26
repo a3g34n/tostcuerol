@@ -16,3 +16,8 @@ Route::get('/contact', function () {
 Route::get('/franchise', function () {
     return view('site.franchise');
 });
+
+
+Route::get('/locations', function () {
+    return view('site.locations');
+});
