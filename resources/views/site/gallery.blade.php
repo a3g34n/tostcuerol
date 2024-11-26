@@ -45,6 +45,7 @@
         }
     </style>
 </head>
+@include('site.header')
 <body>
     <div class="container gallery-container">
         <h1 class="text-center mb-4">Our Menu Highlights</h1>

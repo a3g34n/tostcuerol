@@ -53,8 +53,9 @@ header {
     background-color: #691f06; /* Ana renk: Koyu kırmızı */
     position: relative;
     font-family: 'Fira Sans', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
 }
-
 .desktop-navbar {
     display: flex;
 }
