@@ -4,7 +4,7 @@
     <nav class="navbar desktop-navbar">
         <ul class="navbar-links left-links">
             <li><a href="/">Menü</a></li>
-            <li><a href="/menu">Mağza Lokasyonları</a></li>
+            <li><a href="/locations">Mağza Lokasyonları</a></li>
             <li><a href="/locations">Sosyal Sorumluluk</a></li>
             <li><a href="/franchise">Franchise</a></li>
         </ul>
@@ -16,7 +16,7 @@
         <ul class="navbar-links right-links">
             <li><a href="/contact">Blog</a></li>
             <li><a href="/gallery">Galeri</a></li>
-            <li><a href="/gallery">İletişim</a></li>
+            <li><a href="/contact">İletişim</a></li>
             <li><a href="/hikayemiz">Nostaljik Köşe<em></em></a></li>
         </ul>
     </nav>

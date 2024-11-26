@@ -14,4 +14,13 @@ Route::get('/contact', function () {
 });
 Route::get('/gallery', function () {
     return view('site.gallery');
+
+
+Route::get('/franchise', function () {
+    return view('site.franchise');
+});
+
+
+Route::get('/locations', function () {
+    return view('site.locations');
 });
