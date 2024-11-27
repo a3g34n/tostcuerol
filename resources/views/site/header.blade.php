@@ -1,7 +1,7 @@
 <!-- resources/views/site/header.blade.php -->
 <!-- Announcement Section -->
 <div class="announcement-bar">
-    <p>Hayat tosttan fazlasıdır fakat tostla daha iyi...</p>
+    <p> Tostun meşhur adresine hoş geldiniz!</p>
 </div>
 <header>
     <!-- Desktop Navbar -->
@@ -123,7 +123,7 @@ header {
     text-decoration: none;
     color: #e8ad69; /* Açık krem */
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.8rem;
     transition: color 0.3s ease;
 }
 .navbar-links li a:hover {

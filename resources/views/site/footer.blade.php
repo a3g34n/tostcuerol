@@ -3,11 +3,11 @@
     <!-- Newsletter Section -->
     <div class="newsletter-section">
         <div class="newsletter">
-            <h2>Newsletter</h2>
+            <h2>Mail Grubumuza Dahil Ol!</h2>
             <div class="newsletter-text">
                 <form action="/subscribe" method="POST" class="newsletter-form">
-                    <input type="email" name="email" placeholder="Email address" required>
-                    <button type="submit">Sign Up</button>
+                    <input type="email" name="email" placeholder="Email adresi" required>
+                    <button type="submit">Gönder</button>
                 </form>
             </div>
         </div>
@@ -19,31 +19,27 @@
             <div class="footer-section-item shop">
                 <h4>Franchise</h4>
                 <ul>
-                    <li><a href="/delivery">Bize ulaşın</a></li>
-                    <li>
-                        <!-- Social Media Icons -->
-                        <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="https://tiktok.com" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
-                        <a href="mailto:info@example.com" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
-                    </li>
+                    <li><a href="/locations">Şubeler</a></li>
                 </ul>
             </div>
             <div class="footer-section-item about">
                 <h4>Hakkında</h4>
                 <ul>
-                    <li><a href="/our-story">Tosttan Fazlası</a></li>
-                    <li><a href="/why-humble">Why Humble?</a></li>
-                    <li><a href="/locations">Locations</a></li>
+                    <li><a href="/social">Tosttan Fazlası</a></li>
                 </ul>
             </div>
             <div class="footer-section-item contact">
                 <h4>İletişim</h4>
                 <ul>
-                    <li><a href="/careers">Careers</a></li>
-                    <li><a href="/email-us">Email Us</a></li>
-                    <li><a href="/office-popups">Office Pop-Ups</a></li>
-                    <li><a href="/buy-women-built">Buy Women Built</a></li>
+                    <li><a href="/delivery">Bize ulaşın</a></li>
+                    <li>
+                        <!-- Social Media Icons -->
+                        <a href="https://www.instagram.com/meshursanayitostcusu.tr/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        <a href="mailto:info@example.com" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </li>
                 </ul>
+                
             </div>
             <div class="footer-logo">
                 <img src="/images/logoWriting.png" alt="Logo">

@@ -9,7 +9,7 @@
             <img src="{{ asset('images/image3.jpeg') }}" alt="Tost" class="banner-image">
             <!-- Overlay and Text -->
             <div class="banner-overlay">
-                <h1 class="banner-title">Bir tosttan fazlası: geçmişe, hatıralara ve paylaşıma bir yolculuk</h1>
+                <h1 class="banner-title">Bizim hikayemiz, tam ekmekte bol malzemeyle, dost masalarında başladı</h1>
                 <a href="#" class="btn btn-primary">Keşfet</a>
             </div>
         </section>
@@ -17,10 +17,9 @@
         <section class="motto">
             <!-- Overlay and Text -->
             <div class="motto-overlay">
-                <h1 class="motto-title">Bir tosttan fazlası: geçmişe, hatıralara ve paylaşıma bir yolculuk</h1>
-                <h1 class="motto-title1">Meşhur Sanayi Tostçusu</h1>
-                <h1 class="motto-title2
-                ">Bir tosttan fazlası: geçmişe, hatıralara ve paylaşıma bir yolculuk. Yiyin, eğlenin, paylaşın. Bu tostu hiçbir yerde bulamazsınız</h1>
+                <h1 class="motto-title"> Türkiye'nin Tost Efsanesi</h1>
+                <img src="{{ asset('images/4.png') }}" alt="Sanayi Tostçusu Logo" class="motto-logo">
+                <h1 class="motto-title2">Sanayi tostunun eşsiz tadı, nostaljik bir atmosfer ve doyurucu bir deneyimle yeniden hayat buluyor. Tam ekmek, bol malzeme, sıcacık bir tost ve koca bir gülümseme: İşte biz buyuz!</h1>
             </div>
         </section>
 
@@ -132,7 +131,7 @@
 
 <section class="custom-banner">
     <div class="custom-banner-content">
-        <h2>'Her Ekmek Tam, Her Lokma Dolu Dolu!'</h2>
+        <h2>Her Ekmek Tam, Her Lokma Dolu Dolu!</h2>
         <img src="{{ asset('images/logo.png') }}" alt="Sanayi Tostçusu Logo" class="custom-banner-logo">
     </div>
 </section>
@@ -241,7 +240,10 @@
             font-family: 'Fira Sans Heavy', sans-serif;
             max-width: 80%;
             line-height: 1.4;
-            margin-bottom: 1.5rem;
+        }
+        .motto-logo {
+            max-height: 300px; /* Logonun boyutunu artır */
+           
         }
         .motto-title1 {
             font-size: 8rem;
