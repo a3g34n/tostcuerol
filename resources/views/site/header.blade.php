@@ -8,7 +8,7 @@
     <nav class="navbar desktop-navbar">
         <ul class="navbar-links left-links">
             <li><a href="/hikayemiz">HAKKINDA</a></li>
-            <li><a href="/social">LEZZET SIRRI</a></li>
+            <li><a href="/lezzetsirri">LEZZET SIRRI</a></li>
             <li><a href="/locations">ŞUBELER</a></li>
         </ul>
         
