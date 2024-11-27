@@ -1,102 +1,64 @@
-    <!-- resources/views/site/home.blade.php -->
-    @extends('layouts.app')
+@extends('layouts.app')
 
-    @section('content')
-        @include('site.header')
+@section('content')
+@include('site.header')
 
-       
-    <div id="map" style="height: 500px; width: 100%;"></div>
+<div id="map"></div>
 
-    <div class="spacer"></div>
-<footer class="custom-footer">
-    <p>&copy; 2024 Sanayi Tostçusu. Tüm Hakları Saklıdır.</p>
-</footer>
-    @endsection
-    <style>
-        /* Remove margins and paddings */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Fira Sans', sans-serif;
-            color: #691f06; /* Ana renk */
-            background-color: #FFF4E6; /* Set the entire body background color */
-        }
-        
-        
-.spacer {
-    height: 600px; /* Add space between the banner and footer */
-    background-color: #FFF4E6; /* Match the background color of the page */
-}
+@include('site.footer')
+@endsection
 
-        .navbar {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .custom-footer {
-    background-color: #691F06; /* Footer color matching the example */
-    color: #FFF4E6; /* Text color for the footer */
-    text-align: center;
-    padding: 20px;
-    font-size: 1rem;
-    font-family: 'Fira Sans', sans-serif;
-}
 
-.custom-footer p {
-    margin: 0; /* Remove default margin */
-}
-        #map {
-    height: 800px;
-    width: 100%;
-    margin: 2rem 0;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Fira Sans', sans-serif;
+        color: #691f06; /* Ana renk */
+        background-color: #FFF4E6; /* Set the entire body background color */
+    }
+    #map {
+        width: 100%;
+        height: calc(100vh - 120px);
+        z-index: 0;
+        pointer-events: auto; /* Enable interaction */
+    }
 
+    .site-footer {
+        position: relative;
+        z-index: 1000;
+    }
 </style>
-<script>
-    // Initialize the map
-    function initMap() {
-        const istanbulCenter = { lat: 41.0082, lng: 28.9784 }; // Istanbul center coordinates
 
-        // Create the map
-        const map = new google.maps.Map(document.getElementById("map"), {
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const map = L.map('map', {
+            center: [38.4157341,27.0862886],
             zoom: 12,
-            center: istanbulCenter,
+            scrollWheelZoom: false
         });
 
-        // Array of locations for "Meşhur Sanayi Tostçusu"
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
         const locations = [
-            { lat: 41.0151, lng: 28.9795 }, // Example coordinates
-            { lat: 41.0286, lng: 28.9680 },
-            { lat: 41.0045, lng: 28.9550 },
-            // Add more locations as needed
+            { name: "Franchise 1", coords: [41.0082, 28.9784] },
+            { name: "Franchise 2", coords: [39.9208, 32.8541] },
+            { name: "Franchise 3", coords: [38.4192, 27.1287] },
+            { name: "Franchise 4", coords: [37.0662, 37.3833] }
         ];
 
-        // Custom marker image
-        const markerImage = "{{ asset('images/sanayi_tost_logo.png') }}";
-
-        // Add markers to the map
-        locations.forEach((location) => {
-            new google.maps.Marker({
-                position: location,
-                map: map,
-                icon: {
-                    url: markerImage, // Path to your custom image
-                    scaledSize: new google.maps.Size(50, 50), // Size of the marker
-                },
-            });
+        locations.forEach(location => {
+            L.marker(location.coords)
+                .addTo(map)
+                .bindPopup(`<b>${location.name}</b>`);
         });
-    }
-</script>
-<script
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-    async
-    defer
-></script>
-
+    });
+</script>   

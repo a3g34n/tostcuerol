@@ -14,6 +14,16 @@
             </div>
         </section>
 
+        <section class="motto">
+            <!-- Overlay and Text -->
+            <div class="motto-overlay">
+                <h1 class="motto-title">Bir tosttan fazlası: geçmişe, hatıralara ve paylaşıma bir yolculuk</h1>
+                <h1 class="motto-title1">Meşhur Sanayi Tostçusu</h1>
+                <h1 class="motto-title2
+                ">Bir tosttan fazlası: geçmişe, hatıralara ve paylaşıma bir yolculuk. Yiyin, eğlenin, paylaşın. Bu tostu hiçbir yerde bulamazsınız</h1>
+            </div>
+        </section>
+
         <!-- Values Section -->
     <!-- Values Section -->
     <section class="values-section">
@@ -130,9 +140,7 @@
 <div class="spacer"></div>
 
 <!-- Footer Section -->
-<footer class="custom-footer">
-    <p>&copy; 2024 Sanayi Tostçusu. Tüm Hakları Saklıdır.</p>
-</footer>
+    @include('site.footer')
     @endsection
 
 
@@ -205,6 +213,50 @@
             background-color: #c45e2b; /* Daha koyu turuncu ton */
         }
 
+        /* Motto Section */
+        .motto {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            overflow: hidden;
+        }
+        .motto-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #e8ad69; /* Transparent dark gray */
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 2rem;
+            color: #c45e2b; /* Açık krem */
+        }
+        .motto-title {
+            font-size: 3rem;
+            font-family: 'Fira Sans Heavy', sans-serif;
+            max-width: 80%;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
+        .motto-title1 {
+            font-size: 8rem;
+            font-family: 'Fira Sans Heavy', sans-serif;
+            max-width: 80%;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
+        .motto-title2 {
+            font-size: 2rem;
+            font-family: 'Fira Sans Heavy', sans-serif;
+            max-width: 80%;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+        }
         /* Content Section Below Banner */
         .content-section {
             padding: 4rem 2rem;

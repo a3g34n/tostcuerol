@@ -1,23 +1,28 @@
 <!-- resources/views/site/header.blade.php -->
+<!-- Announcement Section -->
+<div class="announcement-bar">
+    <p>Hayat tosttan fazlasıdır fakat tostla daha iyi...</p>
+</div>
 <header>
     <!-- Desktop Navbar -->
     <nav class="navbar desktop-navbar">
         <ul class="navbar-links left-links">
-            <li><a href="/">Menü</a></li>
-            <li><a href="/locations">Mağza Lokasyonları</a></li>
-            <li><a href="/social">Sosyal Sorumluluk</a></li>
-            <li><a href="/franchise">Franchise</a></li>
+            <li><a href="/hikayemiz">HAKKINDA</a></li>
+            <li><a href="/social">LEZZET SIRRI</a></li>
+            <li><a href="/locations">ŞUBELER</a></li>
         </ul>
         
+       
         <div class="logo">
-            <img src="/images/logo.png" alt="Logo">
+            <a href="/">
+                <img src="/images/logo.png" alt="Logo">
+            </a>
         </div>
         
         <ul class="navbar-links right-links">
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/gallery">Galeri</a></li>
-            <li><a href="/contact">İletişim</a></li>
-            <li><a href="/hikayemiz">Nostaljik Köşe<em></em></a></li>
+            <li><a href="/contact">İLETİŞİM</a></li>
+            <li><a href="/social">TOSTTAN FAZLASI</a></li>
+            <li><a href="/franchise">FRANCHISE</a></li>
         </ul>
     </nav>
 
@@ -46,6 +51,20 @@
 
 
 <style>
+/* Announcement Bar Styling */
+.announcement-bar {
+    width: 100%;
+    background-color: #907847; /* Light cream color */
+    color: #691f06; /* Dark red for text */
+    text-align: left;
+    padding: 0.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    position: relative; /* Ensures it stays above the header */
+    z-index: 2;
+}
    /* Full-width header styling */
 /* Genel Header ve Navbar Ayarları */
 header {
@@ -104,7 +123,7 @@ header {
     text-decoration: none;
     color: #e8ad69; /* Açık krem */
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 .navbar-links li a:hover {
