@@ -5,18 +5,36 @@
 
     <section class="social-responsibility">
         <!-- Full-width banner -->
-        <div class="banner">
-            <img src="{{ asset('images/banner.jpg') }}" alt="Banner Image" class="banner-image">
-        </div>
+       
+    <section class="video-banner">
+        <!-- Full-width banner with play button, text, and banner image -->
+        <div class="banner-container">
+            <!-- Play button on the left -->
+            <div class="banner-play-button">
+                <button id="play-video-btn">
+                    <i class="fa fa-play-circle"></i>
+                </button>
+            </div>
 
-        <!-- Social Responsibility Text -->
-        <div class="social-container">
-            <h1 class="social-title">Sosyal Sorumluluk</h1>
-            <p class="social-text">
-                “Her tost bir çocuğun yüzünde gülümsemeye dönüşüyor. Bu mutluluğun bir parçası olduğun için teşekkür ederiz!”
-            </p>
-        </div>
+            <!-- Banner image on the right -->
+            <div class="banner-image-container">
+                <img src="{{ asset('images/nature.png') }}" alt="Banner Image" class="banner-image">
+            </div>
 
+            <!-- Overlay text -->
+           
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <div class="modal-content">
+            <video id="fullscreen-video" controls>
+                <source src="{{ asset('images/Franchise.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
         <!-- Image Grid -->
         <div class="image-grid">
             <!-- Image with Title and Description -->
@@ -62,15 +80,107 @@
         background-color: #FFF4E6; /* Background color */
     }
 
-    /* Full-width banner */
-    .banner {
-        width: 100%;
+    /* Banner Container */
+    .banner-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 500px;
+        background-color: #691f06;
         overflow: hidden;
+        padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    border-radius: 12px; /* Remove rounded corners */
+    
+        width: 100%; /* Ensure full width */
+    }
+
+    /* Play Button */
+    .banner-play-button {
+        position: absolute;
+        left: 2%;
+        z-index: 10;
+    }
+
+    .banner-play-button button {
+        background: transparent;
+        border: none;
+        font-size: 4rem;
+        color: #FFF;
+        cursor: pointer;
+    }
+
+    .banner-play-button button:hover {
+        color: #ffd700;
+    }
+
+    /* Banner Image */
+    .banner-image-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        
     }
 
     .banner-image {
+        height: 600px;
+        width: 1200px;
+        background:transparent;
+        object-fit: cover;
+    }
+
+    /* Overlay Text */
+    .banner-text {
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFF;
+        text-align: left;
+        max-width: 40%;
+    }
+
+    .banner-text h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .banner-text p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+
+    /* Video Modal */
+    .video-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        position: relative;
+        width: 80%;
+        max-width: 900px;
+        background: #000;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #fullscreen-video {
         width: 100%;
         height: auto;
+    }
+
+    .video-modal.show {
+        display: flex;
     }
 
     .social-responsibility {
@@ -149,4 +259,90 @@
     .custom-footer p {
         margin: 0;
     }
+
+
+    .banner-play-button {
+        position: relative;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    /* Play Button Styling */
+    .banner-play-button button {
+        background: transparent;
+        border: none;
+        font-size: 4rem;
+        color: #FFF;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    .banner-play-button button:hover {
+        color: #ffd700;
+        transform: scale(1.1);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    /* Play Button Pulsing Animation */
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+    }
+
+    /* Circular Glow Effect */
+    .banner-play-button button::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        z-index: 1;
+        animation: glow 1.5s infinite ease-in-out;
+    }
+
+    @keyframes glow {
+        0%, 100% {
+            opacity: 0.6;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.3);
+        }
+    }
+
 </style>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const playButton = document.getElementById('play-video-btn');
+        const videoModal = document.getElementById('video-modal');
+        const videoElement = document.getElementById('fullscreen-video');
+
+        playButton.addEventListener('click', () => {
+            videoModal.classList.add('show');
+            videoElement.play();
+        });
+
+        videoModal.addEventListener('click', (event) => {
+            if (event.target === videoModal) {
+                videoModal.classList.remove('show');
+                videoElement.pause();
+            }
+        });
+    });
+</script>
