@@ -10,7 +10,7 @@
             <!-- Overlay and Text -->
             <div class="banner-overlay">
                 <h1 class="banner-title">Bizim hikayemiz, tam ekmekte bol malzemeyle, dost masalarında başladı</h1>
-                <a href="#" class="btn btn-primary">Keşfet</a>
+                <a href="/hikayemiz" class="btn btn-primary">Keşfet</a>
             </div>
         </section>
 
