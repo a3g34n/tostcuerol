@@ -18,7 +18,7 @@
             <!-- Overlay and Text -->
             <div class="motto-overlay">
                 <h1 class="motto-title"> Türkiye'nin Tost Efsanesi</h1>
-                <img src="{{ asset('images/4.png') }}" alt="Sanayi Tostçusu Logo" class="motto-logo">
+                <img src="{{ asset('images/MST1.png') }}" alt="Sanayi Tostçusu Logo" class="motto-logo">
                 <h1 class="motto-title2">Sanayi tostunun eşsiz tadı, nostaljik bir atmosfer ve doyurucu bir deneyimle yeniden hayat buluyor. Tam ekmek, bol malzeme, sıcacık bir tost ve koca bir gülümseme: İşte biz buyuz!</h1>
             </div>
         </section>
@@ -216,7 +216,7 @@
         .motto {
             position: relative;
             width: 100%;
-            height: 80vh;
+            height: 60vh;
             overflow: hidden;
         }
         .motto-overlay {
@@ -242,7 +242,7 @@
             line-height: 1.4;
         }
         .motto-logo {
-            max-height: 300px; /* Logonun boyutunu artır */
+            max-height: 10vw; /* Logonun boyutunu artır */
            
         }
         .motto-title1 {
