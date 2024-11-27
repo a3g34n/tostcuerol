@@ -30,6 +30,8 @@
     </section>
 
 
+<!-- Footer Section -->
+@include('site.footer')
     @endsection
 
 
@@ -50,6 +52,7 @@
   
         #contact {
         background-color: #FFF4E6;
+        margin-top: 5rem; /* Increased margin */
         padding: 3rem 0; /* Increased padding */
         color: #691f06;
     }

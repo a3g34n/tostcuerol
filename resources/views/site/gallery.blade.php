@@ -37,6 +37,8 @@
     </div>
 </section>
 
+<!-- Footer Section -->
+@include('site.footer')
 @endsection
 
 

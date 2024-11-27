@@ -59,6 +59,9 @@
         </div>
     </div>
 </section>
+
+<!-- Footer Section -->
+@include('site.footer')
 @endsection
 
 <style>
@@ -75,7 +78,7 @@
 
 .nostalgic-page {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 5rem auto;
     padding: 2rem;
 }
 

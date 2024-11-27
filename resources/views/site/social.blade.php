@@ -43,9 +43,9 @@
         </div>
     </section>
 
-    <footer class="custom-footer">
-        <p>© 2024 Meşhur Sanayi Tostçusu </p>
-    </footer>
+   
+<!-- Footer Section -->
+@include('site.footer')
 @endsection
 
 <style>

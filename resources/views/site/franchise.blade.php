@@ -113,9 +113,9 @@
 
 
 </main>
-<footer class="custom-footer">
-    <p>&copy; 2024 Sanayi Tostçusu. Tüm Hakları Saklıdır.</p>
-</footer>
+
+<!-- Footer Section -->
+@include('site.footer')
 @endsection
 
 
@@ -141,26 +141,11 @@
     --white: #ffffff;
 }
 
-/* Header */
-header {
-    width: 100%;
-    background-color: var(--secondary-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem 2rem;
-}
-
-.navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 /* Franchise Container */
 .franchise-container {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 5rem auto;
     padding: 0 1rem;
 }
 
