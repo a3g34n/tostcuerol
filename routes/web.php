@@ -32,3 +32,7 @@ Route::get('/social', function () {
 Route::get('/blog', function () {
     return view('site.blog'); 
 });
+
+Route::get('/lezzetsirri', function () {
+    return view('site.secret'); 
+});

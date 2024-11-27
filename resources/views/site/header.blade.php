@@ -1,30 +1,30 @@
-    <!-- resources/views/site/header.blade.php -->
-    <!-- Announcement Section -->
-    <div class="announcement-bar">
-        <p> Tostun meşhur adresine hoş geldiniz!</p>
-    </div>
-    <header>
-        <!-- Desktop Navbar -->
-        <nav class="navbar desktop-navbar">
-            <ul class="navbar-links left-links">
-                <li><a href="/hikayemiz">HAKKINDA</a></li>
-                <li><a href="/social">LEZZET SIRRI</a></li>
-                <li><a href="/locations">ŞUBELER</a></li>
-            </ul>
-            
+<!-- resources/views/site/header.blade.php -->
+<!-- Announcement Section -->
+<div class="announcement-bar">
+    <p> Tostun meşhur adresine hoş geldiniz!</p>
+</div>
+<header>
+    <!-- Desktop Navbar -->
+    <nav class="navbar desktop-navbar">
+        <ul class="navbar-links left-links">
+            <li><a href="/hikayemiz">HAKKINDA</a></li>
+            <li><a href="/lezzetsirri">LEZZET SIRRI</a></li>
+            <li><a href="/locations">ŞUBELER</a></li>
+        </ul>
         
-            <div class="logo">
-                <a href="/">
-                    <img src="/images/logo.png" alt="Logo">
-                </a>
-            </div>
-            
-            <ul class="navbar-links right-links">
-                <li><a href="/contact">İLETİŞİM</a></li>
-                <li><a href="/social">TOSTTAN FAZLASI</a></li>
-                <li><a href="/franchise">FRANCHISE</a></li>
-            </ul>
-        </nav>
+       
+        <div class="logo">
+            <a href="/">
+                <img src="/images/logo.png" alt="Logo">
+            </a>
+        </div>
+        
+        <ul class="navbar-links right-links">
+            <li><a href="/contact">İLETİŞİM</a></li>
+            <li><a href="/social">TOSTTAN FAZLASI</a></li>
+            <li><a href="/franchise">FRANCHISE</a></li>
+        </ul>
+    </nav>
 
 
         <!-- Mobile Header -->
