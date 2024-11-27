@@ -3,7 +3,7 @@
     <!-- Newsletter Section -->
     <div class="newsletter-section">
         <div class="newsletter">
-            <h2>Mail Grubumuza Dahil Ol!</h2>
+            <h2>Bizden Haberdar Ol!</h2>
             <div class="newsletter-text">
                 <form action="/subscribe" method="POST" class="newsletter-form">
                     <input type="email" name="email" placeholder="Email adresi" required>
