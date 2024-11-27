@@ -17,7 +17,7 @@
         <section class="motto">
             <!-- Overlay and Text -->
             <div class="motto-overlay">
-                <h1 class="motto-title"> Türkiye'nin Tost Efsanesi</h1>
+                <h1 class="motto-title">TÜRKİYE'NİN TOST EFSANESİ</h1>
                 <img src="{{ asset('images/MST1.png') }}" alt="Sanayi Tostçusu Logo" class="motto-logo">
                 <h1 class="motto-title2">Sanayi tostunun eşsiz tadı, nostaljik bir atmosfer ve doyurucu bir deneyimle yeniden hayat buluyor. Tam ekmek, bol malzeme, sıcacık bir tost ve koca bir gülümseme: İşte biz buyuz!</h1>
             </div>
