@@ -22,7 +22,7 @@
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
             </div>
             <div class="grid-item">
-                <img src="{{ asset('images/26.JPG') }}" alt="Image 2" class="grid-image">
+                <img src="{{ asset('images/26.jpg') }}" alt="Image 2" class="grid-image">
                 <h3 class="image-title">Gıda Güvenliği Standartları</h3>
                 <p class="image-description">Tüm üretim süreçlerimiz, uluslararası gıda güvenliği standartlarına uygun şekilde yürütülür. Çalışanlarımız düzenli hijyen eğitimlerinden geçer ve üretim alanlarımız sürekli denetim altındadır.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
@@ -54,7 +54,7 @@
             </div>
 
             <div class="grid-item">
-                <img src="{{ asset('images/20.jpg') }}" alt="Image 4" class="grid-image">
+                <img src="{{ asset('images/20.JPG') }}" alt="Image 4" class="grid-image">
                 <h3 class="image-title">Sosyal Sorumluluk</h3>
                 <p class="image-description">Biz sadece tost yapmıyoruz; aynı zamanda topluma değer katıyoruz. Sosyal sorumluluk projelerimizle ihtiyaç sahiplerine destek oluyor, iyilik dolu bir geleceğe katkıda bulunuyoruz.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
