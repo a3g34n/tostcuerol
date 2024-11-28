@@ -54,13 +54,13 @@
             </div>
 
             <div class="grid-item">
-                <img src="{{ asset('images/image1.jpeg') }}" alt="Image 1" class="grid-image">
+                <img src="{{ asset('images/image4.jpeg') }}" alt="Image 4" class="grid-image">
                 <h3 class="image-title">Sosyal Sorumluluk</h3>
                 <p class="image-description">Biz sadece tost yapmıyoruz; aynı zamanda topluma değer katıyoruz. Sosyal sorumluluk projelerimizle ihtiyaç sahiplerine destek oluyor, iyilik dolu bir geleceğe katkıda bulunuyoruz.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
             </div>
             <div class="grid-item">
-                <img src="{{ asset('images/image2.jpg') }}" alt="Image 2" class="grid-image">
+                <img src="{{ asset('images/image3.jpeg') }}" alt="Image 3" class="grid-image">
                 <h3 class="image-title">Çevreye ve Sürdürülebilirliğe Duyarlılık</h3>
                 <p class="image-description">Üretim sürecinde çevre dostu malzemeler ve sürdürülebilir kaynaklar kullanıyoruz. Geleceğe daha iyi bir dünya bırakmak için her adımda doğaya duyarlıyız.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
