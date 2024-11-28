@@ -44,7 +44,9 @@
                 
             </div>
             <div class="footer-logo">
-                <img src="/images/MST1.png" alt="Logo">
+                <a href="/">
+                    <img src="/images/MST1.png" alt="Logo">
+                </a>
             </div>
         </div>
         <p>Copyright&copy; Meşhur Sanayi Tostçucusu. Tüm hakları saklıdır.</p>
