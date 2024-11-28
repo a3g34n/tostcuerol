@@ -46,15 +46,15 @@
             Parça Mutluluk, Bir Parça
             Geçmiş</h2>
         <h3 class="highlight-brand">Bazı tatlar yalnızca damakta değil, yürekte iz bırakır.
-            Meşhur Sanayi Tostçusu, işte o izlern peşinde; her tost
+            Meşhur Sanayi Tostçusu, işte o izlerin peşinde; her tost
             bir anı, her lokma bir tebessüm.</h3>
-        <p class="highlight-description">Hikayemiz, eski sanayi mahallelernin mütevazı
+        <p class="highlight-description">Hikayemiz, eski sanayi mahallelerinin mütevazı
             tostçularından ilham alıyor. Burası lezzetin dostlukla
             harmanlandığı, paylaşılan bir ekmek parçasının dost
-            meclisnde anlam bulduğu bir yer. Bugün bu nostaljiyi
+            meclisinde anlam bulduğu bir yer. Bugün bu nostaljiyi
             günümüze taşıyarak misafirlerimizi sadece doyurmak
             değil geçmişin huzurunu ve birlikte olmanın
-            mutluluğunu hissettirmek istyoruz.
+            mutluluğunu hissettirmek istiyoruz.
         </p>
         <h3 class="highlight-brand">Her geçen gün misafirlerimzi daha iyi tanıyor daha
             yakın hissediyoruz. </h3>
@@ -65,15 +65,15 @@
             <p class="highlight-description"> Bugün yakın olanları yarın daha da yakın görmek için
                 her adımda braz daha fazlasını veriyoruz. Burada her
                 şey biraz daha samimi biraz daha bizden. Her tostta
-                hissedilen belki de en değerli malzeme: Birilkte
+                hissedilen belki de en değerli malzeme: Birilikte
                 olmanın anlamı
             </p>
             <p class="highlight-description"> Aynı zamanda sadece kendi soframızı değil dünyadaki
                 tüm sofraları düşünerek hareket ediyoruz. Açlıkla
                 mücadele edenlere destek olmayı insanlığın bir gereği
                 olarak görüyoruz. Bu yüzden yerel ve küresel
-                kuruluşlarla iş birilği yaparak gıdanın herkesin hakkı
-                olduğu br gelecek için çalışıyoruz. 
+                kuruluşlarla iş biriliği yaparak gıdanın herkesin hakkı
+                olduğu bir gelecek için çalışıyoruz. 
             </p>
     </div>
 </section>
