@@ -6,8 +6,8 @@
 
         <!-- Full-Width Banner Section -->
         <section class="banner">
-            <img src="{{ asset('images/101.png') }}" alt="Tost" class="banner-image">
-            
+            <img src="{{ asset('images/image3.jpeg') }}" alt="Desktop Banner" class="banner-image">
+            <img src="{{ asset('images/101.png') }}" alt="Mobile Banner" class="banner-image2">            
             <!-- Overlay and Text -->
             <div class="banner-overlay">
                 <h1 class="banner-title">Bizim hikayemiz, tam ekmekte bol malzemeyle, dost masalarında başladı.</h1>
@@ -203,12 +203,16 @@
         }
 
         .banner-image {
+            display: block; /* Default desktop image */
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
         }
 
+        .banner-image2 {
+            display: none; /* Hidden by default */
+        }
         .banner-overlay {
             position: absolute;
             top: 0;
@@ -671,10 +675,15 @@
         height: 50vh; /* Reduce height for mobile */
     }
     .banner-image {
+        display: none; /* Hide desktop image for mobile */
+    }
+
+    .banner-image2 {
+        display: block; /* Show mobile-specific image */
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Ensures the image covers the entire area */
-        object-position: right; /* Centers the image */
+        object-fit: cover;
+        object-position: center;
     }
     .banner-title {
         font-size: 1.2rem; /* Reduce text size */
