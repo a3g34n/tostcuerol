@@ -22,14 +22,76 @@
                 Siz de bu güçlü markanın bir parçası olun, insanları lezzetle buluşturarak hem kendi başarı hikayenizi yazın hem de Türkiye’nin tost efsanesini birlikte büyütelim!
             </p>
         </div>
-        <div class="highlight-image">
+        {{-- <div class="highlight-image">
             <video autoplay muted loop playsinline >
         <source src="{{ asset('images/Franchise.mp4') }}" type="video/mp4">
         
     </video>
-        </div>
+        </div> --}}
     </div>
 </section>
+<div class="custom-carousel-container">
+    <button class="custom-carousel-btn custom-left-btn"></button>
+    <!-- Carousel Items with Text -->
+    <div class="custom-carousel-images">
+        <div class="custom-carousel-item">
+            {{-- <div class="custom-carousel-text">
+                <h3>Image 1 Title</h3>
+                <p>Description for Image 1</p>
+            </div> --}}
+            <img src="{{ asset('images/1.png') }}" alt="Image 1">
+        </div>
+        <div class="custom-carousel-item">
+            {{-- <div class="custom-carousel-text">
+                <h3>Image 2 Title</h3>
+                <p>Description for Image 2</p>
+            </div> --}}
+            <img src="{{ asset('images/2.png') }}" alt="Image 2">
+        </div>
+        <div class="custom-carousel-item">
+            {{-- <div class="custom-carousel-text">
+                <h3>Image 3 Title</h3>
+                <p>Description for Image 3</p>
+            </div> --}}
+            <img src="{{ asset('images/3.png') }}" alt="Image 3">
+        </div>
+        <div class="custom-carousel-item">
+            {{-- <div class="custom-carousel-text">
+                <h3>Image 4 Title</h3>
+                <p>Description for Image 4</p>
+            </div> --}}
+            <img src="{{ asset('images/4.png') }}" alt="Image 4">
+        </div>
+        <div class="custom-carousel-item">
+            {{-- <div class="custom-carousel-text">
+                <h3>Image 5 Title</h3>
+                <p>Description for Image 5</p>
+            </div> --}}
+            <img src="{{ asset('images/5.png') }}" alt="Image 5">
+        </div>
+        <div class="custom-carousel-item">
+            {{-- <div class="custom-carousel-text">
+                <h3>Image 6 Title</h3>
+                <p>Description for Image 6</p>
+            </div> --}}
+            <img src="{{ asset('images/6.png') }}" alt="Image 6">
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="custom-carousel-btn custom-right-btn"></button>
+    
+    <!-- Indicator Circles -->
+</div>
+
+<div class="custom-carousel-indicators">
+    <span class="custom-indicator active" data-index="0"></span>
+    <span class="custom-indicator" data-index="1"></span>
+    <span class="custom-indicator" data-index="2"></span>
+    <span class="custom-indicator" data-index="3"></span>
+    <span class="custom-indicator" data-index="4"></span>
+    <span class="custom-indicator" data-index="5"></span>
+</div>
 
         <section id="franchise-details" class="franchise-advantages">
             <h2>Meşhur Sanayi Tostçusu: Yatırımın En Lezzetli Hali</h2>
@@ -214,6 +276,116 @@
     --white: #ffffff;
 }
 
+.custom-carousel-container {
+    position: relative;
+    width: 100%; /* Adjust container width */
+    margin: auto;
+    padding: 20px 0;
+    background-color: #FFF4E6; /* Updated background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevents overflow */
+}
+
+.custom-carousel-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Consistent spacing */
+}
+
+.custom-carousel-item {
+    display: flex; /* Aligns text and image side by side */
+    align-items: flex-start; /* Align text and image at the top */
+    gap: 20px; /* Space between the text and image */
+    max-width: 1200px; /* Restrict the width for cleaner layout */
+    width: 100%; /* Make the layout responsive */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+
+.custom-carousel-item img {
+    width: 600px; /* Restrict image width */
+    height: 500px; /* Fixed height for consistency */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Add depth to the image */
+}
+.custom-carousel-text {
+   
+    max-width: 50%; /* Limit the width of the text */
+    text-align: left; /* Ensure left alignment of the text */
+    margin: 0; /* Remove any existing margin */
+    padding: 0; /* Remove any padding to align exactly with the image */
+    display: flex; /* Use flexbox to align the content */
+    flex-direction: column; /* Stack title and description vertically */
+    justify-content: flex-start; /* Align text to the top */
+    transform: translateX(-150px); /* Move the text 40px to the left */
+}
+
+.custom-carousel-text h3 {
+    font-size: 2.8rem; /* Larger font for the title */
+    font-weight: bold;
+    margin: 0 0 1rem 0; /* Remove default margin except for the bottom */
+    color: #691f06; /* Theme color */
+}
+
+.custom-carousel-text p {
+    font-size: 1.6rem; /* Font size for description */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0 0 1.5rem 0; /* Remove extra margins except bottom */
+    color: #691f06 !important;
+}
+
+
+.custom-carousel-btn {
+    position: absolute;
+    top: 50%;
+    border: none; /* Remove any default border */
+    transform: translateY(-50%);
+    width: 50px; /* Adjust arrow width */
+    height: 50px; /* Adjust arrow height */
+    background-color: #A43E23; /* Arrow color */
+    cursor: pointer;
+    z-index: 10;
+    clip-path: polygon(100% 50%, 0 100%, 0 0); /* Create the triangle shape */
+    transition: transform 0.3s ease;
+}
+
+.custom-carousel-btn:hover {
+    transform: translateY(-50%) scale(1.1); /* Slight zoom on hover */
+}
+.custom-left-btn {
+    left: 60px; /* Position the left arrow outside the container */
+    clip-path: polygon(0 50%, 100% 100%, 100% 0); /* Reverse triangle direction */
+}
+
+
+.custom-right-btn {
+    right: 60px;
+}
+
+.custom-carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.custom-indicator {
+    width: 12px; /* Adjust circle size */
+    height: 12px;
+    border: 2px solid #691f06; /* Border color for the circle */
+    border-radius: 50%; /* Make the shape circular */
+    background-color: transparent; /* Transparent background by default */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transitions */
+}
+.custom-indicator.active {
+    background-color: #691f06; /* Fill the active circle */
+    transform: scale(1.2); /* Slightly enlarge the active indicator */
+}
 
 /* Franchise Container */
 .franchise-container {
@@ -290,6 +462,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     gap: 3rem;
 }
 
@@ -299,12 +472,14 @@
 
 .highlight-title {
     color: var(--primary-color);
+    font-family: 'Fira Sans', sans-serif;
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
 
 .highlight-brand {
     font-size: 3rem;
+    font-family: 'Fira Sans', sans-serif;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
 }
@@ -312,6 +487,7 @@
 .highlight-description,
 .highlight-footer {
     color: #333;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 1rem;
@@ -550,5 +726,59 @@ textarea {
 </style>
     
 
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+   const images = document.querySelectorAll(".custom-carousel-item");
+   const indicators = document.querySelectorAll(".custom-indicator");
+   const leftBtn = document.querySelector(".custom-left-btn");
+   const rightBtn = document.querySelector(".custom-right-btn");
+   let currentIndex = 0;
+
+   // Update active item and indicator
+   function updateCarousel() {
+       images.forEach((item, index) => {
+           item.style.display = index === currentIndex ? "flex" : "none";
+       });
+       indicators.forEach((ind, index) => {
+           ind.classList.toggle("active", index === currentIndex);
+       });
+   }
+
+   // Move to the next image
+   function nextImage() {
+       currentIndex = (currentIndex + 1) % images.length;
+       updateCarousel();
+   }
+
+   // Move to the previous image
+   function prevImage() {
+       currentIndex = (currentIndex - 1 + images.length) % images.length;
+       updateCarousel();
+   }
+
+   // Attach event listeners to buttons
+   rightBtn.addEventListener("click", nextImage);
+   leftBtn.addEventListener("click", prevImage);
+
+   // Attach event listeners to indicators
+   indicators.forEach((indicator, index) => {
+       indicator.addEventListener("click", () => {
+           currentIndex = index;
+           updateCarousel();
+       });
+   });
+
+   // Initialize the carousel
+   updateCarousel();
+})
+           // Clone carousel-slide and append it for continuous looping
+           document.addEventListener("DOMContentLoaded", function () {
+               var copy = document.querySelector(".carousel-slide").cloneNode(true);
+               
+               document.querySelector(".carousel-images").appendChild(copy);
+           });
+   </script>
 
 
