@@ -190,9 +190,12 @@
     }
 
     .image-description {
-        font-size: 1rem;
-        color: #555;
-        line-height: 1.6;
+        font-size: 1.2rem;
+    line-height: 1.6;
+    color: #907847;
+    margin-bottom: 3rem;
+    margin: 1rem auto; /* Center the paragraph */
+    max-width: 50vw; /* Limit the width of the paragraph */
     }
 
     .info-button {

@@ -18,9 +18,9 @@
             <p class="highlight-description">
                 Franchise modelimizle, bu eşsiz lezzeti ve nostaljik deneyimi kendi şehrinize taşıyabilir, Meşhur Sanayi Tostçusu’nun başarısını paylaşabilirsiniz. Kendi işinizin patronu olurken, Türkiye’nin en sevilen tost markalarından birinin desteğini arkanıza alabilirsiniz. İster yoğun iş merkezlerinde ister üniversite bölgelerinde, her yerde herkesin kalbinde ve damağında unutulmaz bir yer edinebilirsiniz.
             </p>
-            <p class="highlight-description">
+            <h3>
                 Siz de bu güçlü markanın bir parçası olun, insanları lezzetle buluşturarak hem kendi başarı hikayenizi yazın hem de Türkiye’nin tost efsanesini birlikte büyütelim!
-            </p>
+            </h3>
         </div>
         {{-- <div class="highlight-image">
             <video autoplay muted loop playsinline >
@@ -465,6 +465,14 @@
     text-align: center;
     gap: 3rem;
 }
+.highlight-container h3 {
+    font-size: 1.5rem;
+    font-family: 'Fira Sans Bold', sans-serif;
+    color: #691f06;
+    margin-bottom: 4rem;
+    margin: 1rem auto; /* Center the paragraph */
+    max-width: 50vw; /* Limit the width of the paragraph */
+}
 
 .highlight-content {
     flex: 1;
@@ -486,11 +494,12 @@
 
 .highlight-description,
 .highlight-footer {
-    color: #333;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #907847;
+    margin-bottom: 3rem;
+    margin: 1rem auto; /* Center the paragraph */
+    max-width: 50vw; /* Limit the width of the paragraph */
 }
 
 .highlight-image {
