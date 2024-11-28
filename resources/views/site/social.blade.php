@@ -147,7 +147,7 @@
     .spacer {
         height: 2vw; /* Add space between the banner and footer */
         background-color: #e8ad69; /* Match the background color of the page */
-        border-radius: 20px;
+        border-radius: 10px;
         margin-bottom: 4rem;
         margin-top: 4rem;
     }
