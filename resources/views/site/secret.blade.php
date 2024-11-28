@@ -262,7 +262,8 @@
         grid-template-columns: 1fr; /* Single column */
         gap: 20px; /* Adjust spacing between rows */
         text-align: center; /* Center content */
-
+        margin: 2rem auto;
+        max-width: 95vw; /* Limit the width of the grid */
     }
 
     .grid-item {
