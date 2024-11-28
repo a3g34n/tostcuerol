@@ -87,7 +87,9 @@
     .mobile-header {
         display: none;
     }
-
+    .mobile-menu {
+        display: none;
+    }
     /* Desktop Navbar */
     .navbar {
         display: flex;
@@ -323,6 +325,12 @@
         }
     }
 }
+.no-scroll {
+    overflow: hidden; /* Prevents scrolling */
+    position: fixed; /* Locks the content in place */
+    width: 100%; /* Prevents layout shifting */
+    height: 100%; /* Ensures the content stays fixed */
+}
 
 
     </style>
@@ -331,6 +339,8 @@
     <script>
   function toggleMobileNavbar() {
     const mobileMenu = document.querySelector('.mobile-menu');
+    const body = document.body;
     mobileMenu.classList.toggle('open');
+    body.classList.toggle('no-scroll');
 }
     </script>
