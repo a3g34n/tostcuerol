@@ -767,10 +767,29 @@
     margin: 0;
 }
 
+.custom-banner {
+    background-color: #A43E23; /* Banner rengi */
+    color: #FFF4E6; /* Yazı rengi */
+    padding: 40px 0; /* Daha büyük bir padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0% 0;
+}
+.custom-banner-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 85vw; /* Genişliği sınırlı tut */
+}
     /* Custom Banner */
     .custom-banner h2 {
-        font-size: 2.0rem; /* Reduce font size for titles */
+        font-size: 1.8rem; /* Reduce font size for titles */
         text-align: center;
+        max-width: 90vw; /* Limit width for smaller screens */
     }
 
     .custom-banner-content2 {

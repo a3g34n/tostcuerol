@@ -689,7 +689,7 @@ textarea {
     }
 
     .highlight-title {
-        font-size: 1.8rem; /* Daha küçük başlık boyutu */
+        font-size: 1.6rem; /* Daha küçük başlık boyutu */
         margin-bottom: 1rem;
     }
 
