@@ -28,22 +28,30 @@
 
 
         <!-- Mobile Header -->
+       <!-- Mobile Header -->
         <div class="mobile-header">
-        <div class="mobile-logo">
-            <img src="/images/logo.png" alt="Logo">
+            <!-- Mobile Logo -->
+            <div class="mobile-logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <!-- Toggle Button -->
+            <button class="navbar-toggle" onclick="toggleMobileNavbar()">☰</button>
         </div>
-        <button class="navbar-toggle" onclick="toggleMobileNavbar()">☰</button>
+
+        <!-- Mobile Menu -->
         <div class="mobile-menu">
             <ul class="mobile-navbar-links">
-            <li><a href="/hikayemiz">HAKKINDA</a></li>
-            <li><a href="/lezzetsirri">LEZZET SIRRI</a></li>
-            <li><a href="/locations">ŞUBELER</a></li>
-            <li><a href="/contact">İLETİŞİM</a></li>
-            <li><a href="/social">TOSTTAN FAZLASI</a></li>
-            <li><a href="/franchise">FRANCHISE</a></li>
+                <li><a href="/hikayemiz">HAKKINDA</a></li>
+                <li><a href="/lezzetsirri">LEZZET SIRRI</a></li>
+                <li><a href="/locations">ŞUBELER</a></li>
+                <li><a href="/contact">İLETİŞİM</a></li>
+                <li><a href="/social">TOSTTAN FAZLASI</a></li>
+                <li><a href="/franchise">FRANCHISE</a></li>
             </ul>
         </div>
-    </div>
+
     </header>
 
 
@@ -109,6 +117,11 @@
         }
     }
 
+    @media (max-width: 768px) {
+    .desktop-navbar {
+        display: none; /* Hide the desktop navbar on mobile */
+    }
+}
     .left-links li,
     .right-links li {
         opacity: 0;
@@ -219,128 +232,63 @@
     }
 
     @media (max-width: 768px) {
-        /* Hide the desktop navbar */
-        .desktop-navbar {
-            display: none;
-        }
-
     /* Mobile Header */
-        .mobile-header {
-            display: none;
-            background-color: #691f06; /* Ana renk */
-            padding: 1rem;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #691f06; /* Match desktop header color */
+        padding: 1rem;
+        position: relative;
+        z-index: 10;
+        height: 40px; /* Smaller height for mobile */
+    }
 
+    /* Mobile Logo */
+    .mobile-logo img {
+        width: 120px; /* Smaller size for mobile */
+        height: 120px;
+        object-fit: contain;
+    }
 
-        /* Toggle button styling */
-        .navbar-toggle {
-            font-size: 1.5rem;
-            color: #fff4e6; /* Açık krem */
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-
-
-        /* Centered mobile logo styling */
-    
-
-        
-
-        /* Mobile menu styling */
-        .mobile-menu {
-            display: none;
-            position: absolute;
-            top: 0;
-            padding: 6rem 2rem !important; /* Increase top padding to push content down */
-            left: 0;
-            width: 100%;
-            background-color: #691f06; /* Ana renk */
-            color: #fff4e6;
-        
-            z-index: 10;
-            text-align: center;
-        }
-
-        .mobile-menu.open {
-            display: block;
-        }
-
-
-        .mobile-navbar-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .mobile-navbar-links li a {
-            display: block;
-            padding: 1rem;
-            text-decoration: none;
-            color: #fff4e6;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .mobile-header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-
-            padding: 1rem;
-            position: relative;
-            overflow: visible; /* Allow logo to overflow */
-        }
-
-    /* Toggle button positioning */
-    .navbar-toggle {
+    /* Adjust Logo Placement */
+    .mobile-logo {
         position: absolute;
-        top: 15px;
-        left: 15px;
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        color: white;
-        cursor: pointer;
+        top: -10px; /* Overlap header */
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 3;
     }
 
-    /* Centered mobile logo with overflow effect */
-    .mobile-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-     
-        padding: 0.5rem;
-       
+    /* Navbar Toggle */
+    .navbar-toggle {
+        font-size: 2rem;
+        color: #e8ad69; /* Match branding */
+        border: none;
+        background: none;
+        cursor: pointer;
     }
 
-    .mobile-logo img {
-        width: 80%;
-        height: auto;
-    }
-
-    /* Slide-in mobile menu styling */
+    /* Mobile Menu */
     .mobile-menu {
+        display: none; /* Initially hidden */
         position: fixed;
         top: 0;
-        left: -100%; /* Initially hidden off-screen */
-        width: 50%;
+        left: 0;
+        width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
-        transition: left 0.3s ease; /* Smooth slide-in effect */
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent dark overlay */
+        z-index: 9;
+        padding-top: 20rem; /* Add space for the toggle button */
+        text-align: center;
+        animation: slideIn 0.3s ease-in-out;
     }
 
-    /* Mobile menu links */
+    .mobile-menu.open {
+        display: block;
+    }
+
+    /* Mobile Navbar Links */
     .mobile-navbar-links {
         list-style: none;
         padding: 0;
@@ -351,25 +299,38 @@
     }
 
     .mobile-navbar-links li a {
-        color: white;
+        color: #e8ad69; /* Match desktop text color */
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    /* Open menu state */
-    .mobile-menu.open {
-        left: 0; /* Slide into view */
+    .mobile-navbar-links li a:hover {
+        color: #c45e2b; /* Hover color */
+        background-color: rgba(255, 255, 255, 0.1); /* Subtle background highlight */
     }
+
+    /* Slide-in Animation */
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
+}
 
 
     </style>
 
 
     <script>
-        function toggleMobileNavbar() {
-            const mobileMenu = document.querySelector('.mobile-menu');
-            mobileMenu.classList.toggle('open');
-        }
+  function toggleMobileNavbar() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.classList.toggle('open');
+}
     </script>
