@@ -46,7 +46,7 @@
                 
             </div>
             <div class="footer-logo">
-                <img src="/images/logoWriting.png" alt="Logo">
+                <img src="/images/MST1.png" alt="Logo">
             </div>
         </div>
     </div>
@@ -153,7 +153,7 @@ body {
 
 /* Footer Logo */
 .footer-logo img {
-    max-width: 15vw;
+    max-width: 25vw;
     height: auto;
     margin: 1rem auto;
     display: block;
