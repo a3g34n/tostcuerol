@@ -74,6 +74,7 @@
         font-family: 'Fira Sans', sans-serif;
         color: #691f06; /* Main color */
         background-color: #FFF4E6; /* Page background */
+        overflow-x: hidden !important;
     }
 
     .spacer {
@@ -193,15 +194,45 @@
         background-color: #8a2d09;
     }
 
-    /* Responsive adjustments */
     @media (max-width: 768px) {
-        .image-grid {
-            grid-template-columns: 1fr; /* Single column on smaller screens */
-        }
-
-        .grid-image {
-            width: 100%; /* Full width for smaller screens */
-            height: auto; /* Maintain aspect ratio */
-        }
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
+
+    .image-grid {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 20px; /* Adjust spacing between rows */
+        padding: 0 15px; /* Add padding for better alignment on mobile */
+    }
+
+    .grid-item {
+        width: 100%; /* Ensure cards take full width */
+        height: auto; /* Allow dynamic height */
+        padding: 15px; /* Add padding around the card for breathing space */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+        border-radius: 8px; /* Make cards look more polished */
+    }
+
+    .grid-image {
+        width: 100%; /* Full width of the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .image-title {
+        font-size: 1.2rem; /* Adjust title font size */
+        padding-left: 0; /* Remove padding to align with the container */
+    }
+
+    .image-description {
+        font-size: 1rem; /* Adjust font size for better readability */
+        line-height: 1.4;
+        padding-left: 0; /* Remove padding */
+    }
+
+    .info-button {
+        margin-left: 0; /* Align button with the content */
+        width: fit-content; /* Adjust button width to fit content */
+        font-size: 0.9rem; /* Slightly reduce font size */
+    }
+}
 </style>
