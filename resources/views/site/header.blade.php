@@ -94,12 +94,13 @@
         justify-content: space-between;
     }
 
-
+    /* Desktop Navbar */
     .navbar-links {
         display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping of links */
         list-style: none;
-        gap: 1rem;
-        /* Smaller gap for smaller screens */
+        gap: 2rem; /* Adjust spacing dynamically */
+        justify-content: space-between; /* Dynamically distribute space */
     }
     @media (max-width: 1400px) {
         .navbar-links {
@@ -127,13 +128,15 @@
     .left-links li:nth-child(4),
     .right-links li:nth-child(4) { animation-delay: 1s; }
 
+
     .navbar-links li a {
-        text-decoration: none;
-        color: #e8ad69; /* Açık krem */
-        font-weight: bold;
-        font-size: 0.8rem;
-        transition: color 0.3s ease;
-    }
+    text-decoration: none;
+    color: #e8ad69; /* Text color */
+    font-weight: bold;
+    font-size: clamp(0.8rem, 1vw, 1.2rem); /* Responsive font size */
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
     .navbar-links li a:hover {
         color:  #c45e2b; /* Yardımcı renk: Kırmızımsı ton */
     }
@@ -160,17 +163,17 @@
         flex: 1;
         justify-content: space-between;
         list-style: none;
-        gap: 3rem;
+        gap: 10%;
     }
 
     .left-links {
         justify-content: flex-end;
-        margin-right: 20rem; /* Space between left-links and logo */
+        margin-right: 20%; /* Space between left-links and logo */
     }
 
     .right-links {
         justify-content: flex-start;
-        margin-left: 20rem; /* Space between right-links and logo */
+        margin-left: 20%; /* Space between right-links and logo */
     }
 
     /* Centered logo styling */
