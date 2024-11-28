@@ -109,6 +109,49 @@
     button:hover {
         background-color: #8B2A12;
     }
+
+    @media (max-width: 768px) {
+    body {
+       
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .contact-container {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .contact-container h2 {
+        font-size: 1.5rem; /* Smaller font size for the heading */
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem; /* Reduce padding */
+        font-size: 1rem; /* Smaller font size for input text */
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem; /* Reduce spacing between fields */
+    }
+
+    .form-group label {
+        font-size: 1rem; /* Adjust label font size */
+        margin-bottom: 0.5rem; /* Reduce label spacing */
+    }
+
+    .form-group textarea {
+        height: 120px; /* Adjust height of text area */
+    }
+
+    button {
+        padding: 0.8rem 1.5rem; /* Smaller button padding */
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
+    
 </style>
 
     
