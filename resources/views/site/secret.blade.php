@@ -16,32 +16,32 @@
      <div class="image-grid">
             <!-- Image with Title and Description -->
             <div class="grid-item">
-                <img src="{{ asset('images/23.jpg') }}" alt="Image 1" class="grid-image">
+                <img src="{{ asset('images/25.jpg') }}" alt="Image 1" class="grid-image">
                 <h3 class="image-title">Kaliteli Malzemeler</h3>
                 <p class="image-description">Her tostumuzda kullandığımız malzemeler, güvenilir üreticilerden temin edilir ve en taze haliyle mutfağımıza girer. Doğallık ve kalite, her zaman önceliğimizdir.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
             </div>
             <div class="grid-item">
-                <img src="{{ asset('images/22.JPG') }}" alt="Image 2" class="grid-image">
+                <img src="{{ asset('images/26.JPG') }}" alt="Image 2" class="grid-image">
                 <h3 class="image-title">Gıda Güvenliği Standartları</h3>
                 <p class="image-description">Tüm üretim süreçlerimiz, uluslararası gıda güvenliği standartlarına uygun şekilde yürütülür. Çalışanlarımız düzenli hijyen eğitimlerinden geçer ve üretim alanlarımız sürekli denetim altındadır.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
             </div>
             <div class="grid-item">
-                <img src="{{ asset('images/21.jpg') }}" alt="Image 3" class="grid-image">
+                <img src="{{ asset('images/27.jpg') }}" alt="Image 3" class="grid-image">
                 <h3 class="image-title">Taze ve Günlük Üretim</h3>
                 <p class="image-description">Tostlarımız için kullandığımız malzemeler her gün taze olarak hazırlanır. Üretimimizde dondurulmuş veya bayat ürünlere yer yoktur. Sizin için en iyisini sunmak bizim işimiz.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
             </div>
             <div class="grid-item">
-                <img src="{{ asset('images/27.jpg') }}" alt="Image 4" class="grid-image">
+                <img src="{{ asset('images/21.jpg') }}" alt="Image 4" class="grid-image">
                 <h3 class="image-title">El Emeği ve Ustalık</h3>
                 <p class="image-description">Meşhur Sanayi Tostçusu’nda her tost, ustalarımızın tecrübesiyle hazırlanır. Ekmeklerimiz özenle kesilir, iç harçları bol malzeme ile doldurulur ve tam kıvamında pişirilir. Çünkü bizim için her tost, ayrı bir eserdir.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
             </div>
 
             <div class="grid-item">
-                <img src="{{ asset('images/20.jpg') }}" alt="Image 1" class="grid-image">
+                <img src="{{ asset('images/28.jpg') }}" alt="Image 1" class="grid-image">
                 <h3 class="image-title">Gelenekten Geleceğe</h3>
                 <p class="image-description">Markamız, yıllardır lezzetiyle anılan sanayi tostunu nostaljik ruhuyla bugüne taşır. Geleneksel lezzetleri modern bir dokunuşla harmanlayarak eşsiz bir deneyim sunuyoruz.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
@@ -54,13 +54,13 @@
             </div>
 
             <div class="grid-item">
-                <img src="{{ asset('images/28.jpg') }}" alt="Image 4" class="grid-image">
+                <img src="{{ asset('images/20.jpg') }}" alt="Image 4" class="grid-image">
                 <h3 class="image-title">Sosyal Sorumluluk</h3>
                 <p class="image-description">Biz sadece tost yapmıyoruz; aynı zamanda topluma değer katıyoruz. Sosyal sorumluluk projelerimizle ihtiyaç sahiplerine destek oluyor, iyilik dolu bir geleceğe katkıda bulunuyoruz.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
             </div>
             <div class="grid-item">
-                <img src="{{ asset('images/26.jpg') }}" alt="Image 3" class="grid-image">
+                <img src="{{ asset('images/22.jpg') }}" alt="Image 3" class="grid-image">
                 <h3 class="image-title">Çevreye ve Sürdürülebilirliğe Duyarlılık</h3>
                 <p class="image-description">Üretim sürecinde çevre dostu malzemeler ve sürdürülebilir kaynaklar kullanıyoruz. Geleceğe daha iyi bir dünya bırakmak için her adımda doğaya duyarlıyız.</p>
                 {{-- <a href="#" class="info-button">Daha fazla bilgi</a> --}}
