@@ -6,7 +6,8 @@
 
         <!-- Full-Width Banner Section -->
         <section class="banner">
-            <img src="{{ asset('images/image3.jpeg') }}" alt="Tost" class="banner-image">
+            <img src="{{ asset('images/101.png') }}" alt="Tost" class="banner-image">
+            <img src="{{ asset('images/image3.jpeg') }}" alt="Tost" class="banner-image2">
             <!-- Overlay and Text -->
             <div class="banner-overlay">
                 <h1 class="banner-title">Bizim hikayemiz, tam ekmekte bol malzemeyle, dost masalarında başladı.</h1>
@@ -201,13 +202,15 @@
             overflow: hidden;
         }
 
-        .banner-image {
+        .banner-image2 {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
         }
-
+        .banner-image{
+            display: none;
+        }
         .banner-overlay {
             position: absolute;
             top: 0;
@@ -670,8 +673,11 @@
         height: 50vh; /* Reduce height for mobile */
     }
     .banner-image {
-        width: 160%;
-        height: 160%;
+        display: none; /* Hide the desktop image */
+    }
+    .banner-image2 {
+        width: 100%;
+        height: 100%;
         object-fit: cover; /* Ensures the image covers the entire area */
         object-position: right; /* Centers the image */
     }
