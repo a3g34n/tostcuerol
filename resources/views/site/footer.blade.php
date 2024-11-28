@@ -166,4 +166,87 @@ body {
 .social-icon:hover {
     color: #ffffff;
 }
+
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 3rem 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+
+    .footer-logo img {
+        max-width: 70%;
+    }
+
+    .newsletter-section {
+    background-color: #e36e52; /* Light background color */
+    padding: 3rem 1rem; /* Ensure sufficient padding for all elements */
+    color: #354433;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 200px; /* Set a minimum height to avoid overflow issues */
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+.newsletter {
+    width: 100%;
+    max-width: 400px; /* Restrict width for readability */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    gap: 1rem; /* Add space between elements */
+}
+
+.newsletter h2 {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+    color: white;
+    margin-bottom: 1rem; /* Add space below the heading */
+}
+
+.newsletter-form {
+    width: 100%; /* Ensure the form spans the container */
+    display: flex;
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center;
+    gap: 1rem; /* Add space between input and button */
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%; /* Full width input field */
+    border: none;
+    border-bottom: 2px solid #907847;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: #ccc;
+}
+
+.newsletter-form button {
+    width: 100%; /* Full width button for small screens */
+    max-width: 200px; /* Limit the button's maximum width */
+    background-color: #907847;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #546c57;
+}
+
+}
 </style>
