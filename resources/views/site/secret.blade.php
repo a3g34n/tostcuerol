@@ -220,11 +220,23 @@
     body {
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
-
+    .banner h1 {
+        font-size: 2.5rem; /* Adjust heading font size */
+    }
+    .banner p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+    .banner-content p {
+        font-size: 1rem; /* Adjust paragraph font size */
+        margin: 0 auto; /* Center the paragraph */
+        line-height: 1.6; /* Improve readability */
+        max-width: 80vw; /* Limit the width of the paragraph */
+    }
     .image-grid {
         grid-template-columns: 1fr; /* Single column */
         gap: 20px; /* Adjust spacing between rows */
-        padding: 0 15px; /* Add padding for better alignment on mobile */
+        text-align: center; /* Center content */
+
     }
 
     .grid-item {
@@ -233,21 +245,26 @@
         padding: 15px; /* Add padding around the card for breathing space */
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
         border-radius: 8px; /* Make cards look more polished */
+        text-align: center; /* Center content */
+        align-items: center; /* Center content */
     }
 
     .grid-image {
         width: 100%; /* Full width of the container */
-        height: auto; /* Maintain aspect ratio */
+        height: 50vw; /* Maintain aspect ratio */
     }
 
     .image-title {
         font-size: 1.2rem; /* Adjust title font size */
         padding-left: 0; /* Remove padding to align with the container */
+        margin: 0%; /* Remove margin to align with the container */
     }
-
     .image-description {
-        font-size: 1rem; /* Adjust font size for better readability */
+        font-size: 1rem;
         line-height: 1.4;
+        margin-bottom: 3rem;
+        margin: 1rem auto; /* Center the paragraph */
+        max-width: 70vw; /* Limit the width of the paragraph */
         padding-left: 0; /* Remove padding */
     }
 
