@@ -268,7 +268,6 @@
         color: #e8ad69; /* Match branding */
         border: none;
         background: none;
-        cursor: pointer;
     }
 
     /* Mobile Menu */
