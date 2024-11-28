@@ -593,7 +593,7 @@
     text-align: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 70vw; /* Genişliği sınırlı tut */
+    max-width: 100vw; /* Genişliği sınırlı tut */
 }
 
 .custom-banner2 p {
