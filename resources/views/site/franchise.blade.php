@@ -435,6 +435,95 @@ textarea {
     textarea {
         flex: 1 0 100%;
     }
+
+    .franchise-container {
+        padding: 2rem 1rem; /* Daha dar kenar boşlukları */
+    }
+
+    .franchise-highlight {
+        padding: 3rem 1rem; /* Daha az yatay boşluk */
+        text-align: center; /* Mobilde ortalı görünüm */
+    }
+
+    .highlight-title {
+        font-size: 1.8rem; /* Daha küçük başlık boyutu */
+        margin-bottom: 1rem;
+    }
+
+    .highlight-brand {
+        font-size: 2rem; /* Daha küçük marka adı boyutu */
+        margin-bottom: 1rem;
+    }
+
+    .highlight-description {
+        font-size: 1rem; /* Daha küçük metin boyutu */
+        line-height: 1.5; /* Satır aralıklarını daralt */
+        margin-bottom: 1rem;
+    }
+
+    .highlight-image video {
+        width: 100%; /* Video genişliğini mobilde tamamen genişlet */
+        height: auto; /* Oranı koru */
+        margin-top: 2rem; /* Üstten boşluk */
+    }
+
+    .advantages-grid {
+        grid-template-columns: 1fr; /* Tek sütun düzeni */
+        gap: 1.5rem; /* Daha az boşluk */
+    }
+
+    .advantage-card {
+        padding: 1.5rem; /* Kartların iç boşluklarını azalt */
+    }
+
+    .card-icon {
+        width: 50px; /* Daha küçük ikon boyutu */
+        height: 50px;
+    }
+
+    .card-icon svg {
+        width: 25px; /* İkon boyutlarını küçült */
+        height: 25px;
+    }
+
+    .advantage-card h3 {
+        font-size: 1.2rem; /* Daha küçük başlık */
+        margin-bottom: 0.5rem;
+    }
+
+    .advantage-card p {
+        font-size: 0.9rem; /* Daha küçük metin boyutu */
+        line-height: 1.4;
+    }
+
+    .application-form {
+        padding: 3rem 1rem; /* Form çevresindeki boşluğu azalt */
+    }
+
+    .form-container {
+        padding: 1.5rem; /* İçerik boşluğunu küçült */
+    }
+
+    .form-title {
+        font-size: 1.8rem; /* Daha küçük form başlığı */
+        margin-bottom: 1.5rem;
+    }
+
+    .form-row {
+        flex-direction: column; /* Tüm form öğelerini dikey hizala */
+    }
+
+    .form-row input,
+    .form-row select,
+    textarea {
+        font-size: 1rem; /* Yazı boyutunu küçült */
+        padding: 0.8rem; /* Daha az iç boşluk */
+    }
+
+    .form-row button.submit-button {
+        font-size: 1rem; /* Daha küçük düğme yazısı */
+        padding: 0.8rem 1.5rem;
+    }
 }
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
