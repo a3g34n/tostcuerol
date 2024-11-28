@@ -10,11 +10,11 @@
         <!-- Full-width banner with play button, text, and banner image -->
         <div class="banner-container">
             <!-- Play button on the left -->
-            <div class="banner-play-button">
+            {{-- <div class="banner-play-button">
                 <button id="play-video-btn">
                     <i class="fa fa-play-circle"></i>
                 </button>
-            </div>
+            </div> --}}
 
             <!-- Banner image on the right -->
             <div class="banner-image-container">

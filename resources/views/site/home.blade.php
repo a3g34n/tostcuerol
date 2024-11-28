@@ -138,12 +138,12 @@
 
 <section class="custom-banner2">
     <div class="custom-banner-content2">
+        <img src="{{ asset('images/kraft.png') }}" alt="Sanayi Tostçusu Logo" class="custom-banner-logo">
         <div>
         <h3>Meşhur Sanayi Tostçusu'nun bir parçası olun!</h3>
         <p> Lezzetimizle birlikte büyümeye, başarı hikayemizi kendi şehrinize taşımaya ne dersiniz? Güçlü iş modelimiz ve destek sistemimizle sizi bekliyoruz.
             Hemen keşfedin!</p>
         </div>
-        <img src="{{ asset('images/kraft.png') }}" alt="Sanayi Tostçusu Logo" class="custom-banner-logo">
     </div>
 </section>
 <!-- Footer Section -->
