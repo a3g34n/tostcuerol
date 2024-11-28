@@ -142,7 +142,7 @@
         <div>
         <h3>Meşhur Sanayi Tostçusu'nun bir parçası olun!</h3>
         <p> Lezzetimizle birlikte büyümeye, başarı hikayemizi kendi şehrinize taşımaya ne dersiniz? Güçlü iş modelimiz ve destek sistemimizle sizi bekliyoruz.</p>
-        <a href="/franchise" class="btn btn-primary">Hemen keşfedin!</a>
+        <a href="/franchise" class="btn btn-primary">Hemen Keşfedin!</a>
         </div>
     </div>
 </section>
