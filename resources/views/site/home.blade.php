@@ -141,8 +141,8 @@
         <img src="{{ asset('images/kraft.png') }}" alt="Sanayi Tostçusu Logo" class="custom-banner-logo">
         <div>
         <h3>Meşhur Sanayi Tostçusu'nun bir parçası olun!</h3>
-        <p> Lezzetimizle birlikte büyümeye, başarı hikayemizi kendi şehrinize taşımaya ne dersiniz? Güçlü iş modelimiz ve destek sistemimizle sizi bekliyoruz.
-            Hemen keşfedin!</p>
+        <p> Lezzetimizle birlikte büyümeye, başarı hikayemizi kendi şehrinize taşımaya ne dersiniz? Güçlü iş modelimiz ve destek sistemimizle sizi bekliyoruz.</p>
+        <a href="/franchise" class="btn btn-primary">Hemen keşfedin!</a>
         </div>
     </div>
 </section>
