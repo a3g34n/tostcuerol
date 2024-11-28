@@ -622,12 +622,21 @@ textarea {
     }
 
     .franchise-container {
-        padding: 2rem 1rem; /* Daha dar kenar boşlukları */
+        padding: 0; /* Daha dar kenar boşlukları */
+        width: 90%;
     }
 
     .franchise-highlight {
-        padding: 3rem 1rem; /* Daha az yatay boşluk */
+        padding: 0; /* Daha az yatay boşluk */
         text-align: center; /* Mobilde ortalı görünüm */
+    }
+    .highlight-container h3 {
+        font-size: 1.2rem;
+        font-family: 'Fira Sans Bold', sans-serif;
+        color: #691f06;
+        margin-bottom: 2rem;
+        margin: 1rem auto; /* Center the paragraph */
+        max-width: 90vw; /* Limit the width of the paragraph */
     }
 
     .highlight-title {
@@ -643,7 +652,8 @@ textarea {
     .highlight-description {
         font-size: 1rem; /* Daha küçük metin boyutu */
         line-height: 1.5; /* Satır aralıklarını daralt */
-        margin-bottom: 1rem;
+        margin: 1rem auto; /* Metni ortala */
+        max-width: 90vw; /* Metin genişliğini sınırla */
     }
 
     .highlight-image video {
