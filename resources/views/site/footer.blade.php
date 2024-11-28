@@ -17,28 +17,27 @@
     <div class="footer-section">
         <div class="footer-links">
             <div class="footer-section-item shop">
-                <h4>Franchise</h4>
+                <h4>HEMEN KEŞFEDİN</h4>
                 <ul>
                     <li><a href="/franchise">Franchise</a></li>
                     <li><a href="/locations">Şubeler</a></li>
                 </ul>
             </div>
             <div class="footer-section-item about">
-                <h4>Hakkında</h4>
+                <h4>HİKAYEMİZ</h4>
                 <ul>
                     <li><a href="/social">Tosttan Fazlası</a></li>
-                    <li><a href="/hikayemiz">Hikayemiz</a></li>
-                    <li><a href="/social">Değerlerimiz</a></li>
+                    <li><a href="/hikayemiz">Hakkında</a></li>
+                    <li><a href="/lezzetsirri">Lezzet Sırrı</a></li>
                 </ul>
             </div>
             <div class="footer-section-item contact">
-                <h4>İletişim</h4>
+                <h4>İLETİŞİM</h4>
                 <ul>
-                    <li><a href="/contact">Bize ulaşın</a></li>
+                    <li><a href="/contact">Bize Ulaşın</a></li>
                     <li>
                         <!-- Social Media Icons -->
                         <a href="https://www.instagram.com/meshursanayitostcusu.tr/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="https://tiktok.com" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
                         <a href="mailto:info@example.com" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
                     </li>
                 </ul>
@@ -48,6 +47,7 @@
                 <img src="/images/MST1.png" alt="Logo">
             </div>
         </div>
+        <p>Copyright&copy; Meşhur Sanayi Tostçucusu. Tüm hakları saklıdır.</p>
     </div>
 </footer>
 
@@ -109,10 +109,14 @@ body {
 /* Footer Section */
 .footer-section {
     background-color: #907847; /* Darker color for the footer section */
-    padding: 5rem 10rem;
+    padding: 2rem 10rem;
     color: #ffffff;
 }
-
+.footer-section p {
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-bottom: 0%;
+}
 .footer-links {
     display: flex;
     justify-content: space-between;
