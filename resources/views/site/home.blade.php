@@ -136,8 +136,16 @@
     </div>
 </section>
 
-<div class="spacer"></div>
-
+<section class="custom-banner2">
+    <div class="custom-banner-content2">
+        <div>
+        <h3>Meşhur Sanayi Tostçusu'nun bir parçası olun!</h3>
+        <p> Lezzetimizle birlikte büyümeye, başarı hikayemizi kendi şehrinize taşımaya ne dersiniz? Güçlü iş modelimiz ve destek sistemimizle sizi bekliyoruz.
+            Hemen keşfedin!</p>
+        </div>
+        <img src="{{ asset('images/kraft.png') }}" alt="Sanayi Tostçusu Logo" class="custom-banner-logo">
+    </div>
+</section>
 <!-- Footer Section -->
     @include('site.footer')
     @endsection
@@ -566,9 +574,46 @@
     margin-left: 80px;
 }
 
-.spacer {
-    height: 600px; /* Add space between the banner and footer */
-    background-color: #FFF4E6; /* Match the background color of the page */
+
+
+.custom-banner2 {
+    background-color: white; /* Banner rengi */
+    color: #FFF4E6; /* Yazı rengi */
+    padding: 40px 60px; /* Daha büyük bir padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.custom-banner-content2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 70vw; /* Genişliği sınırlı tut */
+}
+
+.custom-banner2 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #907847;
+    margin-bottom: 3rem;
+    margin: 1rem auto; /* Center the paragraph */
+}
+.custom-banner2 h3 {
+    font-size: 1.5rem;
+    font-family: 'Fira Sans Bold', sans-serif;
+    color: #691f06;
+    margin-bottom: 4rem;
+    margin: 1rem auto; /* Center the paragraph */
+    max-width: 50vw; /* Limit the width of the paragraph */
+}
+.custom-banner-logo2 {
+    max-height: 400px; /* Logonun boyutunu artır */
+    margin-left: 80px;
 }
 
 /* Footer Section */
