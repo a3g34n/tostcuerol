@@ -36,9 +36,9 @@
         </div>
     </div>
     <div class="intro-section">
-        <h1 class="intro-title">Her Zaman Bir Tosttan Fazlası</h1>
+        <h1 class="intro-title">Tosttan Fazlası: İyilikle Doyuyoruz</h1>
         <p class="intro-description">
-            Geçmişten günümüze, geleneklerimizi koruyarak geleceğe taşıdığımız bir hikaye.
+            Meşhur Sanayi Tostçusu’nda her lokma sadece lezzet değil, iyiliğin bir dokunuşudur. Biz, tostlarımızı paylaşmayı seven, topluma değer katmayı hedefleyen bir markayız. İşte bu yüzden sadece karınları değil, hayatları doyurmak için de çalışıyoruz.
         </p>
     </div>
         <!-- Image Grid -->
@@ -330,6 +330,9 @@
     font-size: 1.2rem;
     line-height: 1.6;
     color: #907847;
+    font-size: 1.5rem;
+    margin: 0 auto; /* Center the paragraph */
+    max-width: 50vw; /* Limit the width of the paragraph */
 }
 
     @keyframes glow {

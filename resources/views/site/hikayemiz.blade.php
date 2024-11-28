@@ -21,42 +21,60 @@
                 <div class="timeline-circle"></div>
                 <div class="timeline-content">
                     <h3>Hikayemiz</h3>
-                    <p>1950'lerde başlayan eşsiz bir yolculuk.</p>
+                    <p>Geçmişin dostluk dolu anılarını bugüne taşıyan, her lokmada samimiyet ve mutluluk sunan bir markayız.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-circle"></div>
                 <div class="timeline-content">
                     <h3>Misyon</h3>
-                    <p>Lezzetlerimizi herkesle paylaşmak.</p>
+                    <p>Her dolu tostumuzla insanları yalnızca doyurmakla kalmıyor, onları birbirine bağlayan duygusal bir deneyim sunuyoruz.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-circle"></div>
                 <div class="timeline-content">
                     <h3>Vizyon</h3>
-                    <p>Geleneksel tatlarımızı dünyaya tanıtmak.</p>
+                    <p>Geçmişin sıcaklığını bugünün sofralarına taşıyarak, paylaşmanın ve birlikte olmanın değerini hissettiren bir marka olmayı hedefliyoruz.</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Galeri Section -->
     <div class="gallery-section">
-        <h2>Nostaljik Anılar</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="{{ asset('images/image1.jpeg') }}" alt="Retro Saat">
-              
-            </div>
-            <div class="gallery-item">
-                <img src="{{ asset('images/image2.jpg') }}" alt="Retro Gazoz">
-                
-            </div>
-            <div class="gallery-item">
-                <img src="{{ asset('images/image3.jpeg') }}" alt="Klasik Tost Makinesi">
-               
-            </div>
-        </div>
+        <h2>Meşhur Sanayi Tostçusu: Bir
+            Parça Mutluluk, Bir Parça
+            Geçmiş</h2>
+        <h3 class="highlight-brand">Bazı tatlar yalnızca damakta değil, yürekte iz bırakır.
+            Meşhur Sanayi Tostçusu, işte o izlern peşinde; her tost
+            bir anı, her lokma bir tebessüm.</h3>
+        <p class="highlight-description">Hikayemiz, eski sanayi mahallelernin mütevazı
+            tostçularından ilham alıyor. Burası lezzetin dostlukla
+            harmanlandığı, paylaşılan bir ekmek parçasının dost
+            meclisnde anlam bulduğu bir yer. Bugün bu nostaljiyi
+            günümüze taşıyarak misafirlerimizi sadece doyurmak
+            değil geçmişin huzurunu ve birlikte olmanın
+            mutluluğunu hissettirmek istyoruz.
+        </p>
+        <h3 class="highlight-brand">Her geçen gün misafirlerimzi daha iyi tanıyor daha
+            yakın hissediyoruz. </h3>
+            <p class="highlight-description">Çünkü bu bağı güçlendiren şey
+                tostlarımızın doyuruculuğu kadar onlara kattığımız
+                sevgidir. Her yeni misafir, bizim bir parçamız olur.
+            </p>
+            <p class="highlight-description"> Bugün yakın olanları yarın daha da yakın görmek için
+                her adımda braz daha fazlasını veriyoruz. Burada her
+                şey biraz daha samimi biraz daha bizden. Her tostta
+                hissedilen belki de en değerli malzeme: Birilkte
+                olmanın anlamı
+            </p>
+            <p class="highlight-description"> Aynı zamanda sadece kendi soframızı değil dünyadaki
+                tüm sofraları düşünerek hareket ediyoruz. Açlıkla
+                mücadele edenlere destek olmayı insanlığın bir gereği
+                olarak görüyoruz. Bu yüzden yerel ve küresel
+                kuruluşlarla iş birilği yaparak gıdanın herkesin hakkı
+                olduğu br gelecek için çalışıyoruz. 
+            </p>
     </div>
 </section>
 
@@ -147,11 +165,26 @@
 
 .gallery-section h2 {
     font-size: 2.5rem;
-    font-family: 'Fira Sans Heavy', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     color: #691f06;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
-
+.gallery-section h3 {
+    font-size: 1.5rem;
+    font-family: 'Fira Sans Bold', sans-serif;
+    color: #691f06;
+    margin-bottom: 4rem;
+    margin: 1rem auto; /* Center the paragraph */
+    max-width: 50vw; /* Limit the width of the paragraph */
+}
+.gallery-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #907847;
+    margin-bottom: 3rem;
+    margin: 1rem auto; /* Center the paragraph */
+    max-width: 50vw; /* Limit the width of the paragraph */
+}
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Proper responsive grid */
@@ -204,14 +237,14 @@
 .timeline-container {
     width: 100%;
     overflow-x: hidden;
-    padding: 2rem 1rem;
+    padding: 3rem 2rem;
     position: relative;
 }
 
 .timeline {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid; /* Use grid for alignment */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 4rem; /* Adjust spacing between items */
     position: relative;
     width: 100%;
     max-width: 1200px;
@@ -221,7 +254,7 @@
 .timeline::before {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 0;
     right: 0;
     height: 4px;
@@ -247,15 +280,14 @@
 }
 
 .timeline-content {
-    max-width: 200px;
-    
+    max-width: 22vw;
     color: #907847;
 }
 
 .timeline-content h3 {
     font-size: 1.8rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0.8rem;
     font-weight: bold;
     color: #691F06;
 }

@@ -9,7 +9,7 @@
             <img src="{{ asset('images/image3.jpeg') }}" alt="Tost" class="banner-image">
             <!-- Overlay and Text -->
             <div class="banner-overlay">
-                <h1 class="banner-title">Bizim hikayemiz, tam ekmekte bol malzemeyle, dost masalarında başladı</h1>
+                <h1 class="banner-title">Bizim hikayemiz, tam ekmekte bol malzemeyle, dost masalarında başladı.</h1>
                 <a href="/hikayemiz" class="btn btn-primary">Keşfet</a>
             </div>
         </section>
@@ -29,47 +29,47 @@
         <div class="carousel-images">
         <div class="carousel-slide">
         <div class="carousel-item">
-            <img src="{{ asset('images/image1.jpeg') }}" alt="Image 1">
-            <div class="carousel-text">Description for Image 1</div>
+            <img src="{{ asset('images/14.png') }}" alt="Image 1">
+            <div class="carousel-text">Meşhur Sanayi Tostçusu</div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('images/image2.jpg') }}" alt="Image 2">
-            <div class="carousel-text">Description for Image 2</div>
+            <img src="{{ asset('images/11.png') }}" alt="Image 2">
+            <div class="carousel-text">Meşhur Sanayi Tostçusu</div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('images/image3.jpeg') }}" alt="Image 3">
-            <div class="carousel-text">Description for Image 3</div>
+            <img src="{{ asset('images/12.png') }}" alt="Image 3">
+            <div class="carousel-text">Meşhur Sanayi Tostçusu</div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('images/image4.jpeg') }}" alt="Image 4">
-            <div class="carousel-text">Description for Image 4</div>
+            <img src="{{ asset('images/13.png') }}" alt="Image 4">
+            <div class="carousel-text">Meşhur Sanayi Tostçusu</div>
         </div>
-        <div class="carousel-item">
+        {{-- <div class="carousel-item">
             <img src="{{ asset('images/image5.jpg') }}" alt="Image 5">
             <div class="carousel-text">Description for Image 5</div>
-        </div>
+        </div> --}}
     </div>
             <div class="carousel-slide">
         <div class="carousel-item">
-            <img src="{{ asset('images/image1.jpeg') }}" alt="Image 1">
-            <div class="carousel-text">Description for Image 1</div>
+            <img src="{{ asset('images/14.png') }}" alt="Image 1">
+            <div class="carousel-text">Meşhur Sanayi Tostçusu</div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('images/image2.jpg') }}" alt="Image 2">
-            <div class="carousel-text">Description for Image 2</div>
+            <img src="{{ asset('images/11.png') }}" alt="Image 2">
+            <div class="carousel-text">Meşhur Sanayi Tostçusu</div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('images/image3.jpeg') }}" alt="Image 3">
-            <div class="carousel-text">Description for Image 3</div>
+            <img src="{{ asset('images/12.png') }}" alt="Image 3">
+            <div class="carousel-text">Meşhur Sanayi Tostçusu</div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('images/image4.jpeg') }}" alt="Image 4">
-            <div class="carousel-text">Description for Image 4</div>
+            <img src="{{ asset('images/13.png') }}" alt="Image 4">
+            <div class="carousel-text">Meşhur Sanayi Tostçusu</div>
         </div>
-        <div class="carousel-item">
+        {{-- <div class="carousel-item">
             <img src="{{ asset('images/image5.jpg') }}" alt="Image 5">
             <div class="carousel-text">Description for Image 5</div>
-        </div>
+        </div> --}}
     </div>
         </div>
     </section>
@@ -132,7 +132,7 @@
 <section class="custom-banner">
     <div class="custom-banner-content">
         <h2>Her Ekmek Tam, Her Lokma Dolu Dolu!</h2>
-        <img src="{{ asset('images/logo.png') }}" alt="Sanayi Tostçusu Logo" class="custom-banner-logo">
+        {{-- <img src="{{ asset('images/logo.png') }}" alt="Sanayi Tostçusu Logo" class="custom-banner-logo"> --}}
     </div>
 </section>
 
@@ -191,7 +191,7 @@
 
         .banner-title {
             font-size: 3rem;
-            font-family: 'Fira Sans Heavy', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
             max-width: 80%;
             line-height: 1.4;
             margin-bottom: 1.5rem;
@@ -548,9 +548,10 @@
 .custom-banner-content {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px; /* Genişliği sınırlı tut */
+    max-width: 60vw; /* Genişliği sınırlı tut */
 }
 
 .custom-banner h2 {
