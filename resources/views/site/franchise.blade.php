@@ -12,9 +12,12 @@
             <h2 class="highlight-brand">Meşhur Sanayi Tostçusu</h2>
             <p class="highlight-description">Meşhur Sanayi Tostçusu, yalnızca bir lezzet markası olmanın ötesinde, her lokmasıyla geçmişin sıcak anılarını bugüne taşıyan, samimiyetiyle insanları bir araya getiren ve büyüyen bir hikayedir. Biz, sadece tost yapmıyoruz; insanların hayatlarına anlam katıyor, nostaljiyi modern bir dokunuşla yeniden hayata geçiriyoruz. Her ekmek diliminde bol malzeme, her lokmada içten bir hikaye taşıyan tostlarımız, lezzetin ötesinde unutulmaz bir deneyim sunuyor.
             </p>
+            <div class="spacer"></div>
             <p class="highlight-description">
                 Bugün Türkiye’nin dört bir yanında insanlar, Meşhur Sanayi Tostçusu’nu sadece doyurucu lezzetleri için değil, aynı zamanda sıcak atmosferi ve samimi hizmet anlayışı için tercih ediyor. Bu, yılların emeğiyle yoğrulmuş, müşterilerimizin sevgisiyle büyümüş bir başarı hikayesidir. Şimdi, bu hikayenin bir parçası olmanız için harika bir fırsat var.
             </p>
+            <div>
+            <div class="spacer"></div>
             <p class="highlight-description">
                 Franchise modelimizle, bu eşsiz lezzeti ve nostaljik deneyimi kendi şehrinize taşıyabilir, Meşhur Sanayi Tostçusu’nun başarısını paylaşabilirsiniz. Kendi işinizin patronu olurken, Türkiye’nin en sevilen tost markalarından birinin desteğini arkanıza alabilirsiniz. İster yoğun iş merkezlerinde ister üniversite bölgelerinde, her yerde herkesin kalbinde ve damağında unutulmaz bir yer edinebilirsiniz.
             </p>
@@ -287,7 +290,13 @@
     z-index: 1000; /* Ensures it stays above other elements */
     transition: opacity 0.3s ease; /* Smooth fade-in/out */
 }
-
+.spacer {
+        height: 1vw; /* Add space between the banner and footer */
+        background-color: #691F06; /* Match the background color of the page */
+        border-radius: 10px;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
 .back-to-top:hover {
     background-color: #c45e2b; /* Darker color on hover */
     opacity: 0.9;
@@ -637,6 +646,13 @@ textarea {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .spacer {
+        height: 3vw; /* Add space between the banner and footer */
+        background-color: #691F06; /* Match the background color of the page */
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
     .form-row {
         flex-direction: column;
     }
