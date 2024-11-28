@@ -19,6 +19,8 @@
             <div class="footer-section-item shop">
                 <h4>Franchise</h4>
                 <ul>
+                    <li><a href="/franchise">Bize Katılın</a></li>
+                    <li><a href="/franchise">Franchise</a></li>
                     <li><a href="/locations">Şubeler</a></li>
                 </ul>
             </div>
@@ -26,12 +28,14 @@
                 <h4>Hakkında</h4>
                 <ul>
                     <li><a href="/social">Tosttan Fazlası</a></li>
+                    <li><a href="/hikayemiz">Hikayemiz</a></li>
+                    <li><a href="/social">Değerlerimiz</a></li>
                 </ul>
             </div>
             <div class="footer-section-item contact">
                 <h4>İletişim</h4>
                 <ul>
-                    <li><a href="/delivery">Bize ulaşın</a></li>
+                    <li><a href="/contact">Bize ulaşın</a></li>
                     <li>
                         <!-- Social Media Icons -->
                         <a href="https://www.instagram.com/meshursanayitostcusu.tr/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
