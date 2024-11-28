@@ -61,6 +61,8 @@
                
             </div>
         </div> --}}
+        <div class="spacer"></div>
+
         <div class="advantages-grid">
             <div class="advantage-card">
                 {{-- <div class="card-icon">
@@ -115,6 +117,7 @@
                 <p>Tostlarımızı paylaşarak iyiliğin çoğalacağına inanıyoruz. Müşterilerimizle birlikte oluşturduğumuz bağ, sadece lezzeti değil, iyilik yapma gücümüzü de artırıyor. Sen de bir tostla bu iyiliğe ortak ol!</p>
             </div>
         </div>
+        <div class="spacer"></div>
 
         <div class="intro-section2">
             <p class="intro-description2">
@@ -141,7 +144,12 @@
         color: #691f06; /* Main color */
         background-color: #FFF4E6; /* Background color */
     }
+    .spacer {
+        height: 1vw; /* Add space between the banner and footer */
+        background-color: #e8ad69; /* Match the background color of the page */
+        border-radius: 20px;
 
+    }
     /* Banner Container */
     .banner-container {
         display: flex;
