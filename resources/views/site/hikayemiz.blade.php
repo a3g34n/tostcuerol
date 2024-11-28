@@ -306,31 +306,7 @@
     margin-top: 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .timeline {
-        flex-direction: column;
-        gap: 3rem;
-    }
 
-    .timeline::before {
-        top: 0;
-        left: 50%;
-        height: 100%;
-        width: 4px;
-        transform: translateX(-50%);
-    }
-
-    .timeline-item {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .timeline-circle {
-        margin-right: 1rem;
-        margin-bottom: 0;
-    }
-}
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .section {
@@ -358,12 +334,13 @@
         width: 90%; /* Ensure items fit within mobile width */
         margin-bottom: 2rem;
     }
-
     .timeline-circle {
-        width: 40px; /* Smaller circle for mobile */
-        height: 40px;
-        margin-right: 1rem;
-        margin-bottom: 0;
+        width: 20px !important; /* Force width */
+        height: 20px !important; /* Force height */
+        min-width: 20px; /* Prevent shrinking */
+        min-height: 20px; /* Prevent shrinking */
+        margin-right: 1rem; /* Adjust margin for alignment */
+        margin-bottom: 0; /* Remove bottom margin for row layout */
     }
 
     .timeline-content {
@@ -377,6 +354,18 @@
 
     .timeline-content p {
         font-size: 0.9rem; /* Adjust paragraph size */
+    }
+    .gallery-section h3 {
+        font-size: 1.2rem;
+        max-width: 80vw;
+    }
+    .gallery-section h2 {
+        font-size: 2rem;
+        max-width: 90vw;
+    }
+    .gallery-section p {
+        font-size: 0.9rem;
+        max-width: 80vw;
     }
 }
 </style>
