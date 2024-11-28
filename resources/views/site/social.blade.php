@@ -343,6 +343,91 @@
         }
     }
 
+    @media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner-play-button {
+        top: 100%; /* Move the button further down */
+         /* Add padding for spacing */
+        transform: translateY(-10%); /* Center it relative to the new position */
+        width: auto; /* Ensure proper size on mobile */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .banner-play-button button {
+        font-size: 2.5rem; /* Keep the size appropriate for smaller screens */
+    }
+
+    .banner-play-button button::after {
+        width: 70px; /* Keep the glow effect proportionate */
+        height: 70px;
+    }
+
+    .banner-container {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust the overall height dynamically */
+        padding: 20px; /* Add some padding for spacing */
+    }
+
+    .banner-image-container {
+        width: 100%; /* Ensure the image scales properly */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .banner-image {
+        width: 100%; /* Scale the image appropriately */
+        height: auto; /* Ensure aspect ratio remains intact */
+    }
+    .image-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px; /* Adjust spacing between rows */
+        padding: 0 10px; /* Add padding for alignment */
+    }
+
+    .grid-item {
+        width: 100%; /* Full width for each card */
+        margin: 0 auto; /* Center-align the card */
+        height: auto; /* Adjust height dynamically */
+        padding: 10px; /* Add padding for better spacing */
+        background: #FFF4E6; /* Ensure background is consistent */
+        border-radius: 8px; /* Maintain rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    .grid-image {
+        width: 100%; /* Scale images to fit card */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 6px; /* Rounded corners for images */
+    }
+
+    .intro-section {
+        padding: 10px; /* Add padding for mobile devices */
+    }
+
+    .intro-title {
+        font-size: 1.8rem; /* Slightly smaller title size */
+    }
+
+    .intro-description {
+        font-size: 1rem; /* Adjust font size for better readability */
+        line-height: 1.5;
+    }
+
+    .banner-play-button button {
+        font-size: 3rem; /* Adjust play button size */
+    }
+
+    .video-modal .modal-content {
+        width: 90%; /* Make modal fit smaller screens */
+    }
+}
 </style>
 
 
