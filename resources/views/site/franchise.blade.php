@@ -8,10 +8,9 @@
     <section class="franchise-highlight">
     <div class="highlight-container">
         <div class="highlight-content">
-            <h1 class="highlight-title"> Gücünü Paylaşmaya Hazır Mısınız?</h1>
+            <h1 class="highlight-title">Lezzetin Gücünü Paylaşmaya Hazır Mısınız?</h1>
             <h2 class="highlight-brand">Meşhur Sanayi Tostçusu</h2>
-            <p class="highlight-description">
-                Devamındaki yazı: Meşhur Sanayi Tostçusu, yalnızca bir lezzet markası olmanın ötesinde, her lokmasıyla geçmişin sıcak anılarını bugüne taşıyan, samimiyetiyle insanları bir araya getiren ve büyüyen bir hikayedir. Biz, sadece tost yapmıyoruz; insanların hayatlarına anlam katıyor, nostaljiyi modern bir dokunuşla yeniden hayata geçiriyoruz. Her ekmek diliminde bol malzeme, her lokmada içten bir hikaye taşıyan tostlarımız, lezzetin ötesinde unutulmaz bir deneyim sunuyor.
+            <p class="highlight-description">Meşhur Sanayi Tostçusu, yalnızca bir lezzet markası olmanın ötesinde, her lokmasıyla geçmişin sıcak anılarını bugüne taşıyan, samimiyetiyle insanları bir araya getiren ve büyüyen bir hikayedir. Biz, sadece tost yapmıyoruz; insanların hayatlarına anlam katıyor, nostaljiyi modern bir dokunuşla yeniden hayata geçiriyoruz. Her ekmek diliminde bol malzeme, her lokmada içten bir hikaye taşıyan tostlarımız, lezzetin ötesinde unutulmaz bir deneyim sunuyor.
             </p>
             <p class="highlight-description">
                 Bugün Türkiye’nin dört bir yanında insanlar, Meşhur Sanayi Tostçusu’nu sadece doyurucu lezzetleri için değil, aynı zamanda sıcak atmosferi ve samimi hizmet anlayışı için tercih ediyor. Bu, yılların emeğiyle yoğrulmuş, müşterilerimizin sevgisiyle büyümüş bir başarı hikayesidir. Şimdi, bu hikayenin bir parçası olmanız için harika bir fırsat var.

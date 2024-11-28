@@ -131,6 +131,12 @@
         font-size: 1.5rem;
         margin: 0;
     }
+    .banner-content p {
+    font-size: 1.5rem;
+    margin: 0 auto; /* Center the paragraph */
+    max-width: 40vw; /* Limit the width of the paragraph */
+    line-height: 1.6; /* Improve readability */
+    }
 
     /* Image Grid */
     .image-grid {

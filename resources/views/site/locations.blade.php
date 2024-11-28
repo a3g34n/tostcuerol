@@ -39,8 +39,8 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const map = L.map('map', {
-            center: [38.4157341,27.0862886],
-            zoom: 12,
+            center: [38.370479,27.1888193],
+            zoom: 13,
             scrollWheelZoom: false
         });
 
@@ -49,10 +49,7 @@
         }).addTo(map);
 
         const locations = [
-            { name: "Franchise 1", coords: [41.0082, 28.9784] },
-            { name: "Franchise 2", coords: [39.9208, 32.8541] },
-            { name: "Franchise 3", coords: [38.4192, 27.1287] },
-            { name: "Franchise 4", coords: [37.0662, 37.3833] }
+            { name: "Franchise 1", coords: [38.370479,27.1888193] },
         ];
 
         locations.forEach(location => {
