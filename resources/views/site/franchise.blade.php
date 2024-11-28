@@ -147,7 +147,7 @@
                           </svg>                          
                     </div>
                     <h3>Düşük Yatırım, Yüksek Karlılık</h3>
-                    <p>Uygun yatırım maliyetlerimiz ve kısa sürede geri dönüş sağlayan iş modelimizle kârlı bir franchise fırsatı sunuyoruz. Yüksek müşteri sadakatiyle kazancınızı artırabilirsiniz.</p>
+                    <p>Uygun yatırım maliyetlerimiz ve kısa sürede geri dönüş sağlayan iş modelimizle karlı bir franchise fırsatı sunuyoruz. Yüksek müşteri sadakatiyle kazancınızı artırabilirsiniz.</p>
                 </div>
                 <div class="advantage-card">
                     <div class="card-icon">
@@ -181,7 +181,7 @@
                           </svg>                          
                     </div>
                     <h3>Sosyal Sorumluluk ile Güçlü İmaj</h3>
-                    <p>Toplumsal sorumluluk projelerimizle sadece bir lezzet markası değil, aynı zamanda toplumda değer yaratan bir marka kimliği sunuyoruz. Bu da müşterilerinizin markanıza duyduğu güveni artırır.</p>
+                    <p>Toplumsal sorumluluk projelerimizle sadece bir lezzet markası değil, aynı zamanda toplumda değer yaratan bir marka kimliği sunuyoruz. Bu da müşterilerin markamıza duyduğu güveni arttırır.</p>
                 </div>
                 <div class="advantage-card">
                     <div class="card-icon">

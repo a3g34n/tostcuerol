@@ -63,10 +63,10 @@
                 sevgidir. Her yeni misafir, bizim bir parçamız olur.
             </p>
             <p class="highlight-description"> Bugün yakın olanları yarın daha da yakın görmek için
-                her adımda braz daha fazlasını veriyoruz. Burada her
+                her adımda biraz daha fazlasını veriyoruz. Burada her
                 şey biraz daha samimi biraz daha bizden. Her tostta
                 hissedilen belki de en değerli malzeme: Birilikte
-                olmanın anlamı
+                olmanın anlamı.
             </p>
             <p class="highlight-description"> Aynı zamanda sadece kendi soframızı değil dünyadaki
                 tüm sofraları düşünerek hareket ediyoruz. Açlıkla
