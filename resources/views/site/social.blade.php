@@ -26,7 +26,7 @@
         </div>
     </section>
 
-    <!-- Video Modal -->
+    {{-- <!-- Video Modal -->
     <div id="video-modal" class="video-modal">
         <div class="modal-content">
             <video id="fullscreen-video" controls>
@@ -34,7 +34,7 @@
               
             </video>
         </div>
-    </div>
+    </div> --}}
     <div class="intro-section">
         <h1 class="intro-title">Tosttan Fazlası: İyilikle Doyuyoruz</h1>
         <p class="intro-description">
@@ -42,7 +42,7 @@
         </p>
     </div>
         <!-- Image Grid -->
-        <div class="image-grid">
+        {{-- <div class="image-grid">
             <!-- Image with Title and Description -->
             <div class="grid-item">
                 <img src="{{ asset('images/image1.jpeg') }}" alt="Image 1" class="grid-image">
@@ -60,6 +60,66 @@
                 <img src="{{ asset('images/image4.jpeg') }}" alt="Image 4" class="grid-image">
                
             </div>
+        </div> --}}
+        <div class="advantages-grid">
+            <div class="advantage-card">
+                {{-- <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <path d="M9 12l2 2 4-4"></path>
+                    </svg>
+                </div> --}}
+                <h3>Paylaşmanın Gücüne İnanıyoruz</h3>
+                <p>Sanayi tostunun doğasında paylaşım var. Bu yüzden biz de lezzetimizi ve sevgimizi paylaşarak büyüyoruz. Satılan her tostumuzun bir parçasını, daha adil ve mutlu bir dünya için iyiliğe dönüştürüyoruz.</p>
+            </div>
+            <div class="advantage-card">
+                {{-- <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                        <polyline points="17 6 23 6 23 12"></polyline>
+                      </svg>                          
+                </div> --}}
+                <h3>Herkes İçin Gıda Erişimi</h3>
+                <p>Gıda eşitliğini temel bir insan hakkı olarak görüyoruz. Dünyada gıdaya erişim hakkı için çalışan vakıflar ve sivil toplum kuruluşlarıyla iş birliği yaparak, daha fazla insanın temel besin ihtiyaçlarına ulaşmasını sağlamayı amaçlıyoruz. Satılan her tostumuz, bu hedefe bir adım daha yaklaşmamıza destek oluyor.</p>
+            </div>
+            <div class="advantage-card">
+                {{-- <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7" r="4"></circle>
+                        <path d="M20 8v6"></path>
+                        <path d="M23 11h-6"></path>
+                    </svg>
+                </div> --}}
+                <h3>Lezzetimizle İyiliğe Köprü Kuruyoruz</h3>
+                <p>Her tost, sadece bir lezzet değil; umut, iyilik ve destek taşıyan bir bağdır. Yerel vakıflarla iş birliği yapıyor, gıda eşitliği için mücadele eden organizasyonlara katkıda bulunuyoruz. Tostlarımızla iyiliği sofralara taşıyoruz.</p>
+            </div>
+            <div class="advantage-card">
+                {{-- <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                        <polyline points="17 2 12 7 7 2"></polyline>
+                      </svg>                          
+                </div> --}}
+                <h3>Doğaya Saygılıyız</h3>
+                <p>Biz sadece insanları değil, gezegenimizi de seviyoruz. Üretim süreçlerimizde doğa dostu malzemeler kullanıyor, çevreye duyarlı bir yaklaşım benimsiyoruz. Daha iyi bir dünya için hem sofralarda hem de doğada iz bırakıyoruz.</p>
+            </div>
+            <div class="advantage-card">
+                {{-- <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path>
+                    <path d="M22 7a2 2 0 0 0-2-2h-6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"></path>
+                    </svg>                          
+                </div> --}}
+                <h3>Birlikte Daha Güçlüyüz</h3>
+                <p>Tostlarımızı paylaşarak iyiliğin çoğalacağına inanıyoruz. Müşterilerimizle birlikte oluşturduğumuz bağ, sadece lezzeti değil, iyilik yapma gücümüzü de artırıyor. Sen de bir tostla bu iyiliğe ortak ol!</p>
+            </div>
+        </div>
+
+        <div class="intro-section2">
+            <p class="intro-description2">
+                Meşhur Sanayi Tostçusu olarak, sadece bir lezzet markası değil; iyiliği büyüten, paylaşmanın değerini bilen bir aileyiz. Sosyal sorumluluk projelerimizle her lokmamız, sadece doyurmakla kalmaz; paylaşmanın mutluluğunu büyütür. Gel, birlikte hem lezzeti hem de iyiliği paylaşalım.
+            </p>
         </div>
     </section>
 
@@ -152,6 +212,59 @@
         font-size: 1.5rem;
         line-height: 1.6;
     }
+
+    .advantages-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .advantage-card {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+    .advantage-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .advantage-card h3 {
+        font-size: 1.5rem;
+        font-family: 'Fira Sans Bold', sans-serif;
+        color: #691f06;
+        margin-bottom: 4rem;
+        margin: 1rem auto; /* Center the paragraph */
+        max-width: 50vw; /* Limit the width of the paragraph */
+    }
+
+    .advantage-card p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #907847;
+        margin-bottom: 3rem;
+        margin: 1rem auto; /* Center the paragraph */
+        max-width: 50vw; /* Limit the width of the paragraph */
+    }
+    .card-icon {
+        width: 70px;
+        height: 70px;
+        background-color: var(--secondary-color);
+        color: var(--white);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+    }
+
+    .card-icon svg {
+        width: 35px;
+        height: 35px;
+        stroke: var(--white);
+    }
+
 
     /* Video Modal */
     .video-modal {
@@ -320,6 +433,11 @@
     margin-bottom: 3rem;
 }
 
+.intro-section2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
 .intro-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -334,7 +452,20 @@
     margin: 0 auto; /* Center the paragraph */
     max-width: 50vw; /* Limit the width of the paragraph */
 }
+.intro-title2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
 
+.intro-description2 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #907847;
+    font-size: 1.5rem;
+    margin: 0 auto; /* Center the paragraph */
+    max-width: 50vw; /* Limit the width of the paragraph */
+}
     @keyframes glow {
         0%, 100% {
             opacity: 0.6;
