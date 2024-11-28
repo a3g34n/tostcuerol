@@ -31,32 +31,34 @@
         <div class="modal-content">
             <video id="fullscreen-video" controls>
                 <source src="{{ asset('images/Franchise.mp4') }}" type="video/mp4">
-                Your browser does not support the video tag.
+              
             </video>
         </div>
+    </div>
+    <div class="intro-section">
+        <h1 class="intro-title">Her Zaman Bir Tosttan Fazlası</h1>
+        <p class="intro-description">
+            Geçmişten günümüze, geleneklerimizi koruyarak geleceğe taşıdığımız bir hikaye.
+        </p>
     </div>
         <!-- Image Grid -->
         <div class="image-grid">
             <!-- Image with Title and Description -->
             <div class="grid-item">
                 <img src="{{ asset('images/image1.jpeg') }}" alt="Image 1" class="grid-image">
-                <h3 class="image-title">Image Title 1</h3>
-                <p class="image-description">This is the description for the first image. It provides details about the content of the image.</p>
+               
             </div>
             <div class="grid-item">
                 <img src="{{ asset('images/image2.jpg') }}" alt="Image 2" class="grid-image">
-                <h3 class="image-title">Image Title 2</h3>
-                <p class="image-description">This is the description for the second image. It provides details about the content of the image.</p>
+                
             </div>
             <div class="grid-item">
                 <img src="{{ asset('images/image3.jpeg') }}" alt="Image 3" class="grid-image">
-                <h3 class="image-title">Image Title 3</h3>
-                <p class="image-description">This is the description for the third image. It provides details about the content of the image.</p>
+               
             </div>
             <div class="grid-item">
                 <img src="{{ asset('images/image4.jpeg') }}" alt="Image 4" class="grid-image">
-                <h3 class="image-title">Image Title 4</h3>
-                <p class="image-description">This is the description for the fourth image. It provides details about the content of the image.</p>
+               
             </div>
         </div>
     </section>
@@ -312,6 +314,23 @@
         z-index: 1;
         animation: glow 1.5s infinite ease-in-out;
     }
+
+    .intro-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.intro-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #907847;
+}
 
     @keyframes glow {
         0%, 100% {
