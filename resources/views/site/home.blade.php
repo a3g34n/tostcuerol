@@ -563,7 +563,7 @@
 }
 
 .custom-banner h2 {
-    font-size: 5.0rem; /* Daha büyük font boyutu */
+    font-size: 4.0rem; /* Daha büyük font boyutu */
     font-weight: bold;
     margin: 0;
     font-family: 'Fira Sans', sans-serif;
@@ -630,6 +630,136 @@
     margin: 0; /* Remove default margin */
 }
 
+
+@media (max-width: 768px) {
+    /* General Adjustments */
+    body {
+        font-size: 14px; /* Default font size for smaller screens */
+    }
+
+    /* Banner Section */
+    .banner {
+        height: 50vh; /* Reduce height for mobile */
+    }
+
+    .banner-title {
+        font-size: 1.5rem; /* Reduce text size */
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Smaller buttons */
+        padding: 0.6rem 1rem;
+    }
+
+    /* Motto Section */
+    .motto {
+        height: 500px; /* Adjust height dynamically */
+        padding: 2rem 1rem;
+    }
+
+    .motto-title {
+        font-size: 2rem; /* Reduce title size */
+    }
+
+    .motto-title2 {
+        font-size: 1rem; /* Smaller secondary text */
+        line-height: 1.4;
+    }
+
+    .motto-logo {
+        max-height: 80px;
+        max-width: 400px; /* Reduce logo size */
+    }
+
+    /* Values Section */
+    .values-section {
+        padding: 2rem 1rem;
+    }
+
+    .carousel-images {
+        gap: 10px; /* Reduce gap between images */
+        overflow-x: scroll; /* Enable horizontal scrolling for smaller screens */
+        display: flex;
+    }
+
+    .carousel-item img {
+        width: 150px; /* Reduce image width */
+        height: 200px; /* Maintain smaller height */
+    }
+
+    .carousel-text {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    /* Custom Carousel */
+    .custom-carousel-container {
+        flex-direction: column; /* Stack items */
+    }
+
+    .custom-carousel-item {
+        flex-direction: column; /* Stack image and text */
+        text-align: center; /* Center align text */
+    }
+
+    .custom-carousel-item img {
+        width: 90%; /* Make images occupy most of the screen */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .custom-carousel-text h3 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .custom-carousel-text p {
+        font-size: 1rem; /* Adjust description size */
+    }
+
+    .custom-carousel-btn {
+        width: 30px; /* Smaller arrows */
+        height: 30px;
+    }
+
+    /* Custom Banner */
+    .custom-banner h2 {
+        font-size: 2.0rem; /* Reduce font size for titles */
+        text-align: center;
+    }
+
+    .custom-banner-content2 {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align all child elements horizontally */
+    text-align: center; /* Center-align text */
+    padding: 1rem; /* Add some spacing around the content */
+}
+
+.custom-banner-logo {
+    max-height: 180px; /* Ensure the logo is appropriately sized */
+    margin-right: 5rem; /* Add spacing below the logo */
+}
+
+    .custom-banner2 h3 {
+        font-size: 1.2rem; /* Reduce text size */
+        text-align: center;
+    }
+
+    .custom-banner-content2 {
+        flex-direction: column; /* Stack text and logo */
+        align-items: center;
+    }
+
+    .custom-banner-content2 img {
+        max-width: 80%; /* Adjust image size */
+        margin-bottom: 1rem;
+    }
+
+    /* Footer Section */
+    .custom-footer {
+        padding: 10px;
+        font-size: 0.9rem; /* Reduce footer text size */
+    }
+}
 
 </style>
 
