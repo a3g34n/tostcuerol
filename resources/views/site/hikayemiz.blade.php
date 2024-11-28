@@ -80,6 +80,9 @@
 
 <!-- Footer Section -->
 @include('site.footer')
+<button class="back-to-top" id="backToTop">
+    ↑
+</button>
 @endsection
 
 <style>
@@ -94,6 +97,29 @@
             background-color: #FFF4E6; /* Set the entire body background color */
             
         }
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #e8ad69; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem; /* Font size for the arrow */
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    z-index: 1000; /* Ensures it stays above other elements */
+    transition: opacity 0.3s ease; /* Smooth fade-in/out */
+}
+
+.back-to-top:hover {
+    background-color: #c45e2b; /* Darker color on hover */
+    opacity: 0.9;
+}
 
 .nostalgic-page {
     max-width: 1200px;
@@ -369,3 +395,25 @@
     }
 }
 </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Show/Hide button on scroll
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    // Scroll to top when button is clicked
+    backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", // Smooth scrolling
+        });
+    });
+});
+</script>
