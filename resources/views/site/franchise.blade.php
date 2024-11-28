@@ -8,13 +8,19 @@
     <section class="franchise-highlight">
     <div class="highlight-container">
         <div class="highlight-content">
-            <h1 class="highlight-title"> Güvenli Kazancın Adresi:</h1>
+            <h1 class="highlight-title"> Gücünü Paylaşmaya Hazır Mısınız?</h1>
             <h2 class="highlight-brand">Meşhur Sanayi Tostçusu</h2>
             <p class="highlight-description">
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, quo aperiam deserunt repellat asperiores tempora quaerat, quis in omnis aut itaque, illo blanditiis totam nam reprehenderit corrupti dignissimos officia optio!
+                Devamındaki yazı: Meşhur Sanayi Tostçusu, yalnızca bir lezzet markası olmanın ötesinde, her lokmasıyla geçmişin sıcak anılarını bugüne taşıyan, samimiyetiyle insanları bir araya getiren ve büyüyen bir hikayedir. Biz, sadece tost yapmıyoruz; insanların hayatlarına anlam katıyor, nostaljiyi modern bir dokunuşla yeniden hayata geçiriyoruz. Her ekmek diliminde bol malzeme, her lokmada içten bir hikaye taşıyan tostlarımız, lezzetin ötesinde unutulmaz bir deneyim sunuyor.
             </p>
-            <p class="highlight-footer">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic doloribus autem distinctio quo, quos sunt! Fugiat, totam hic. Tenetur ad nihil sed nesciunt dolore quidem vitae pariatur quaerat cum possimus eaque ab modi dicta cumque, facere eligendi vero. Laborum velit reiciendis accusantium quam, odit minima harum eius. In, accusamus voluptates.
+            <p class="highlight-description">
+                Bugün Türkiye’nin dört bir yanında insanlar, Meşhur Sanayi Tostçusu’nu sadece doyurucu lezzetleri için değil, aynı zamanda sıcak atmosferi ve samimi hizmet anlayışı için tercih ediyor. Bu, yılların emeğiyle yoğrulmuş, müşterilerimizin sevgisiyle büyümüş bir başarı hikayesidir. Şimdi, bu hikayenin bir parçası olmanız için harika bir fırsat var.
+            </p>
+            <p class="highlight-description">
+                Franchise modelimizle, bu eşsiz lezzeti ve nostaljik deneyimi kendi şehrinize taşıyabilir, Meşhur Sanayi Tostçusu’nun başarısını paylaşabilirsiniz. Kendi işinizin patronu olurken, Türkiye’nin en sevilen tost markalarından birinin desteğini arkanıza alabilirsiniz. İster yoğun iş merkezlerinde ister üniversite bölgelerinde, her yerde herkesin kalbinde ve damağında unutulmaz bir yer edinebilirsiniz.
+            </p>
+            <p class="highlight-description">
+                Siz de bu güçlü markanın bir parçası olun, insanları lezzetle buluşturarak hem kendi başarı hikayenizi yazın hem de Türkiye’nin tost efsanesini birlikte büyütelim!
             </p>
         </div>
         <div class="highlight-image">
@@ -27,7 +33,7 @@
 </section>
 
         <section id="franchise-details" class="franchise-advantages">
-            <h2>Why Choose Our Franchise?</h2>
+            <h2>Meşhur Sanayi Tostçusu: Yatırımın En Lezzetli Hali</h2>
             <div class="advantages-grid">
                 <div class="advantage-card">
                     <div class="card-icon">
@@ -36,8 +42,8 @@
                             <path d="M9 12l2 2 4-4"></path>
                         </svg>
                     </div>
-                    <h3>Proven Business Model</h3>
-                    <p>Leverage our time-tested strategies and comprehensive operational support.</p>
+                    <h3>Güçlü ve Tanınan Bir Marka</h3>
+                    <p>Meşhur Sanayi Tostçusu, geniş bir müşteri kitlesinin güvenini kazanmış, lezzetiyle tanınan ve sevilen bir marka. Güçlü marka bilinirliğimiz, yeni şubelerimizi daha hızlı bir başarıya ulaştırır.</p>
                 </div>
                 <div class="advantage-card">
                     <div class="card-icon">
@@ -48,23 +54,91 @@
                             <path d="M23 11h-6"></path>
                         </svg>
                     </div>
-                    <h3>Comprehensive Training</h3>
-                    <p>Receive in-depth training and ongoing support to ensure your success.</p>
+                    <h3>Kanıtlanmış İş Modeli</h3>
+                    <p>
+                        Başarıyla test edilmiş ve kanıtlanmış iş modelimiz sayesinde riskler en aza indirgenir. Her detay düşünülmüş bir sistemle işinizi kolayca yönetebilirsiniz.</p>
                 </div>
                 <div class="advantage-card">
                     <div class="card-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
+                            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                            <polyline points="17 2 12 7 7 2"></polyline>
+                          </svg>                          
                     </div>
-                    <h3>Brand Recognition</h3>
-                    <p>Benefit from our strong market presence and established customer loyalty.</p>
+                    <h3>Nostaljik Konsept, Modern Yönetim</h3>
+                    <p>Retro atmosferimiz ve doyurucu ürünlerimiz, markamızı rakiplerinden ayırır. Geleneksel sanayi ruhunu modern bir işletme anlayışıyla birleştiriyoruz.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path>
+                        <path d="M22 7a2 2 0 0 0-2-2h-6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"></path>
+                        </svg>                          
+                    </div>
+                    <h3>Eğitim ve Operasyonel Destek</h3>
+                    <p>İşe başlamadan önce kapsamlı bir eğitim ve sonrasında sürekli operasyonel destek sağlıyoruz. Deneyimli ekibimizle, her aşamada yanınızdayız.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                          </svg>                          
+                    </div>
+                    <h3>Düşük Yatırım, Yüksek Karlılık</h3>
+                    <p>Uygun yatırım maliyetlerimiz ve kısa sürede geri dönüş sağlayan iş modelimizle kârlı bir franchise fırsatı sunuyoruz. Yüksek müşteri sadakatiyle kazancınızı artırabilirsiniz.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                          </svg>                          
+                    </div>
+                    <h3>Geniş Hedef Kitle</h3>
+                    <p>Meşhur Sanayi Tostçusu, hem öğrenciler hem de aileler gibi farklı demografik gruplara hitap eder. Bu geniş müşteri profili, işletmenizin başarısını destekler.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <path d="M8.21 13.89l-1.66 7.01a.5.5 0 0 0 .73.54L12 18l4.72 3.44a.5.5 0 0 0 .73-.54l-1.66-7.01"></path>
+                          </svg>
+                    </div>
+                    <h3> Güçlü Sadakat Programı</h3>
+                    <p>WEB tabanlı uygulamamızla müşterilere puan kazandıran ve sadakati artıran programlar sunuyoruz. Bu teknoloji destekli sistem, müşteri bağlılığını güçlendirir ve tekrar satışları artırır.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                          </svg>                          
+                    </div>
+                    <h3>Sosyal Sorumluluk ile Güçlü İmaj</h3>
+                    <p>Toplumsal sorumluluk projelerimizle sadece bir lezzet markası değil, aynı zamanda toplumda değer yaratan bir marka kimliği sunuyoruz. Bu da müşterilerinizin markanıza duyduğu güveni artırır.</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                          </svg>                          
+                    </div>
+                    <h3> Yerel ve Küresel Büyüme Fırsatı</h3>
+                    <p>Meşhur Sanayi Tostçusu, yerel başarıyı küresel bir vizyona taşımayı hedefler. Franchise sahibi olarak hem bulunduğunuz bölgede hem de ulusal ağımızda büyüme fırsatını yakalarsınız.</p>
                 </div>
             </div>
         </section>
 
         <section class="application-form">
+            <h2>Başvurunuzu hemen yapın ve şehrinizin en sevilen tost noktası siz olun!</h2>
+
     <div class="form-container">
         <h2 class="form-title">Başvuru Formu</h2>
         <form action="/submit-form" method="POST" class="form">
@@ -262,7 +336,12 @@
     background-color: var(--background-color);
     padding: 4rem 2rem;
 }
-
+.application-form h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 4rem;
+}
 .form-container {
     max-width: 800px;
     margin: 0 auto;
