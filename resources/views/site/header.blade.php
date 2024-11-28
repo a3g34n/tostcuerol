@@ -35,14 +35,12 @@
         <button class="navbar-toggle" onclick="toggleMobileNavbar()">☰</button>
         <div class="mobile-menu">
             <ul class="mobile-navbar-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/menu">Menu</a></li>
-                <li><a href="/locations">Locations</a></li>
-                <li><a href="/franchise">Franchise</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/gallery">Gallery</a></li>
-                <li><a href="/social-responsibility">Social</a></li>
+            <li><a href="/hikayemiz">HAKKINDA</a></li>
+            <li><a href="/lezzetsirri">LEZZET SIRRI</a></li>
+            <li><a href="/locations">ŞUBELER</a></li>
+            <li><a href="/contact">İLETİŞİM</a></li>
+            <li><a href="/social">TOSTTAN FAZLASI</a></li>
+            <li><a href="/franchise">FRANCHISE</a></li>
             </ul>
         </div>
     </div>
@@ -256,11 +254,12 @@
             display: none;
             position: absolute;
             top: 0;
+            padding: 6rem 2rem !important; /* Increase top padding to push content down */
             left: 0;
             width: 100%;
             background-color: #691f06; /* Ana renk */
             color: #fff4e6;
-            padding: 1rem;
+        
             z-index: 10;
             text-align: center;
         }
@@ -290,7 +289,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #D99B60;
+            width: 100%;
+
             padding: 1rem;
             position: relative;
             overflow: visible; /* Allow logo to overflow */
@@ -314,10 +314,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #fff4e6; /* Açık krem */
-        border-radius: 50%;
+       
+     
         padding: 0.5rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       
     }
 
     .mobile-logo img {

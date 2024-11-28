@@ -46,15 +46,15 @@
         <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="{{ asset('images/image1.jpeg') }}" alt="Retro Saat">
-                <p>Retro Saat</p>
+              
             </div>
             <div class="gallery-item">
                 <img src="{{ asset('images/image2.jpg') }}" alt="Retro Gazoz">
-                <p>Retro Gazoz</p>
+                
             </div>
             <div class="gallery-item">
                 <img src="{{ asset('images/image3.jpeg') }}" alt="Klasik Tost Makinesi">
-                <p>Klasik Tost Makinesi</p>
+               
             </div>
         </div>
     </div>
@@ -74,6 +74,7 @@
             font-family: 'Fira Sans', sans-serif;
             color: #691f06; /* Ana renk */
             background-color: #FFF4E6; /* Set the entire body background color */
+            
         }
 
 .nostalgic-page {
@@ -303,9 +304,47 @@
     .section {
         flex-direction: column;
     }
+    
 
     .section.reverse {
         flex-direction: column;
+    }
+
+    .timeline {
+        flex-direction: column; /* Change to vertical layout */
+        align-items: center;
+    }
+
+    .timeline::before {
+        display: none; /* Remove the vertical line for mobile */
+    }
+
+    .timeline-item {
+        flex-direction: row; /* Align circle and content horizontally */
+        align-items: center;
+        justify-content: flex-start;
+        width: 90%; /* Ensure items fit within mobile width */
+        margin-bottom: 2rem;
+    }
+
+    .timeline-circle {
+        width: 40px; /* Smaller circle for mobile */
+        height: 40px;
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+
+    .timeline-content {
+        max-width: 100%; /* Allow content to stretch */
+        text-align: left;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem; /* Adjust paragraph size */
     }
 }
 </style>
