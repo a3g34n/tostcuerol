@@ -492,7 +492,44 @@
         margin: 0;
         padding: 0;
     }
+    .intro-section {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 
+    .intro-section2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .intro-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+    }
+
+    .intro-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #907847;
+        font-size: 1rem;
+        margin: 0 auto; /* Center the paragraph */
+        max-width: 90vw; /* Limit the width of the paragraph */
+    }
+    .intro-title2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+    }
+
+    .intro-description2 {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #907847;
+        font-size: 1rem;
+        margin: 0 auto; /* Center the paragraph */
+        max-width: 90vw; /* Limit the width of the paragraph */
+    }
     .banner-play-button {
         top: 100%; /* Move the button further down */
          /* Add padding for spacing */
@@ -550,19 +587,7 @@
         border-radius: 6px; /* Rounded corners for images */
     }
 
-    .intro-section {
-        padding: 10px; /* Add padding for mobile devices */
-    }
-
-    .intro-title {
-        font-size: 1.8rem; /* Slightly smaller title size */
-    }
-
-    .intro-description {
-        font-size: 1rem; /* Adjust font size for better readability */
-        line-height: 1.5;
-    }
-
+   
     .banner-play-button button {
         font-size: 3rem; /* Adjust play button size */
     }
@@ -570,6 +595,36 @@
     .video-modal .modal-content {
         width: 90%; /* Make modal fit smaller screens */
     }
+    .advantage-card {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+    .advantage-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .advantage-card h3 {
+        font-size: 1.2rem;
+        font-family: 'Fira Sans Bold', sans-serif;
+        color: #691f06;
+        margin-bottom: 4rem;
+        margin: 1rem auto; /* Center the paragraph */
+        max-width: 80vw; /* Limit the width of the paragraph */
+    }
+
+    .advantage-card p {
+        font-size: 1rem;
+        line-height: 1.4;
+        color: #907847;
+        margin-bottom: 2rem;
+        margin: 1rem auto; /* Center the paragraph */
+        max-width: 80vw; /* Limit the width of the paragraph */
+    }
+
 }
 </style>
 
