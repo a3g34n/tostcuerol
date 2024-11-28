@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <div class="custom-carousel-container">
+    {{-- <div class="custom-carousel-container">
     <button class="custom-carousel-btn custom-left-btn"></button>
     <!-- Carousel Items with Text -->
     <div class="custom-carousel-images">
@@ -127,7 +127,7 @@
     <span class="custom-indicator" data-index="2"></span>
     <span class="custom-indicator" data-index="3"></span>
     <span class="custom-indicator" data-index="4"></span>
-</div>
+</div> --}}
 
 <section class="custom-banner">
     <div class="custom-banner-content">

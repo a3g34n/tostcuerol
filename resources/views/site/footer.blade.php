@@ -19,7 +19,6 @@
             <div class="footer-section-item shop">
                 <h4>Franchise</h4>
                 <ul>
-                    <li><a href="/franchise">Bize Katılın</a></li>
                     <li><a href="/franchise">Franchise</a></li>
                     <li><a href="/locations">Şubeler</a></li>
                 </ul>
