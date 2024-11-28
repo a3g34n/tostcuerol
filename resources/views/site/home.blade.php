@@ -670,8 +670,8 @@
         height: 50vh; /* Reduce height for mobile */
     }
     .banner-image {
-        width: 140%;
-        height: 140%;
+        width: 160%;
+        height: 160%;
         object-fit: cover; /* Ensures the image covers the entire area */
         object-position: right; /* Centers the image */
     }
