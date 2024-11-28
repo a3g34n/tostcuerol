@@ -215,17 +215,11 @@
                 <input type="tel" name="phone" placeholder="Telefon Numaranız*" required>
             </div>
             <div class="form-row">
-                <select name="city" required>
+                <select id="city" name="city" required>
                     <option value="" disabled selected>İl Seçiniz</option>
-                    <option value="istanbul">İstanbul</option>
-                    <option value="ankara">Ankara</option>
-                    <option value="izmir">İzmir</option>
                 </select>
-                <select name="district" required>
+                <select id="district" name="district" required>
                     <option value="" disabled selected>İlçe Seçiniz</option>
-                    <option value="kadikoy">Kadıköy</option>
-                    <option value="besiktas">Beşiktaş</option>
-                    <option value="konak">Konak</option>
                 </select>
             </div>
             <textarea name="message" placeholder="Mesajınız*" rows="5" required></textarea>
@@ -801,6 +795,42 @@ textarea {
 
 
 <script>
+    document.addEventListener("DOMContentLoaded", async function () {
+    const citySelect = document.getElementById("city");
+    const districtSelect = document.getElementById("district");
+
+    // JSON dosyasını yükle
+    const response = await fetch('/data/turkiye.json');
+    const data = await response.json();
+
+    // Şehirleri doldur
+    data.data.forEach(city => {
+        const option = document.createElement("option");
+        option.value = city.il_adi;
+        option.textContent = city.il_adi;
+        citySelect.appendChild(option);
+    });
+
+    // Şehir seçildiğinde ilçeleri doldur
+    citySelect.addEventListener("change", function () {
+        const selectedCity = this.value;
+
+        // İlçeleri temizle
+        districtSelect.innerHTML = `<option value="" disabled selected>İlçe Seçiniz</option>`;
+
+        // Seçili ilin ilçelerini bul ve ekle
+        const cityData = data.data.find(city => city.il_adi === selectedCity);
+        if (cityData) {
+            cityData.ilceler.forEach(district => {
+                const option = document.createElement("option");
+                option.value = district.ilce_adi;
+                option.textContent = district.ilce_adi;
+                districtSelect.appendChild(option);
+            });
+        }
+    });
+});
+
     document.addEventListener("DOMContentLoaded", () => {
         const backToTopButton = document.getElementById("backToTop");
 
