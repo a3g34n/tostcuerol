@@ -643,7 +643,7 @@
     }
 
     .banner-title {
-        font-size: 1.5rem; /* Reduce text size */
+        font-size: 1.2rem; /* Reduce text size */
         margin-bottom: 1rem;
     }
 
@@ -654,22 +654,26 @@
 
     /* Motto Section */
     .motto {
-        height: 500px; /* Adjust height dynamically */
-        padding: 2rem 1rem;
+        height: 100vw; /* Adjust height dynamically */
+        padding: 2rem 0rem;
     }
 
     .motto-title {
-        font-size: 2rem; /* Reduce title size */
+        font-size: 1.8rem; /* Reduce title size */
+        line-height: 1.2;
     }
 
     .motto-title2 {
-        font-size: 1rem; /* Smaller secondary text */
-        line-height: 1.4;
+        font-size: 0.9rem; /* Smaller secondary text */
+        line-height: 1.2;
+        max-width: 100vw; /* Limit width for smaller screens */
     }
 
     .motto-logo {
-        max-height: 80px;
-        max-width: 400px; /* Reduce logo size */
+        max-height: 20vw;
+        max-width: 90vw; /* Reduce logo size */
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     /* Values Section */
@@ -719,6 +723,16 @@
         width: 30px; /* Smaller arrows */
         height: 30px;
     }
+    .custom-banner2 {
+    background-color: white; /* Banner rengi */
+    color: #FFF4E6; /* Yazı rengi */
+    padding: 0; /* Daha büyük bir padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+}
 
     /* Custom Banner */
     .custom-banner h2 {
@@ -742,8 +756,13 @@
     .custom-banner2 h3 {
         font-size: 1.2rem; /* Reduce text size */
         text-align: center;
+        max-width: 90vw; /* Limit width for smaller screens */
     }
-
+    .custom-banner2 p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+        margin-bottom: 1rem; /* Add spacing below the paragraph */
+        max-width: 90vw; /* Limit width for smaller screens */
+    }
     .custom-banner-content2 {
         flex-direction: column; /* Stack text and logo */
         align-items: center;

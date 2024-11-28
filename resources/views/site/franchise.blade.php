@@ -620,7 +620,14 @@ textarea {
     textarea {
         flex: 1 0 100%;
     }
-
+    /* Advantages Section */
+    .franchise-advantages {
+        padding: 5rem 0rem;
+        text-align: center;
+    }
+    .franchise-advantages h2 {
+        font-size: 2rem;
+    }
     .franchise-container {
         padding: 0; /* Daha dar kenar boşlukları */
         width: 90%;
@@ -692,9 +699,13 @@ textarea {
     }
 
     .application-form {
-        padding: 3rem 1rem; /* Form çevresindeki boşluğu azalt */
+        padding: 3rem 0rem; /* Form çevresindeki boşluğu azalt */
     }
-
+    .application-form h2 {
+        font-size: 1.9rem; /* Daha küçük form başlığı */
+        margin-bottom: 2rem;
+        padding: 0;
+    }
     .form-container {
         padding: 1.5rem; /* İçerik boşluğunu küçült */
     }
