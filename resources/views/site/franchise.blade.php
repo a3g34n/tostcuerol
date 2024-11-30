@@ -201,11 +201,12 @@
         </section>
 
         <section class="application-form">
-            <h2>Başvurunuzu hemen yapın ve şehrinizin en sevilen tost noktası siz olun!</h2>
+    <h2>Başvurunuzu hemen yapın ve şehrinizin en sevilen tost noktası siz olun!</h2>
 
     <div class="form-container">
         <h2 class="form-title">Başvuru Formu</h2>
-        <form action="/submit-form" method="POST" class="form">
+        <form action="{{ route('send-email') }}" method="POST" class="form">
+            @csrf <!-- This is necessary for Laravel to handle the form submission securely -->
             <div class="form-row">
                 <input type="text" name="first_name" placeholder="Adınız*" required>
                 <input type="text" name="last_name" placeholder="Soyadınız*" required>
@@ -233,13 +234,14 @@
                     <span>Kampanyalar, haberler ve ürünler hakkında bilgi almak istiyorum.</span>
                 </label>
             </div>
-        
+
             <div class="form-row">
                 <button type="submit" class="submit-button">Başvuru Yap</button>
             </div>
         </form>
     </div>
 </section>
+
 
 
 

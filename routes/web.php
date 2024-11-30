@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\EmailController;
 Route::get('/', function () {
     return view('site.home');
 });
@@ -36,3 +36,7 @@ Route::get('/blog', function () {
 Route::get('/lezzetsirri', function () {
     return view('site.secret'); 
 });
+
+Route::post('/send-email', [EmailController::class, 'sendEmail'])->name('send-email');
+Route::post('/send-contact-email', [EmailController::class, 'sendContactEmail'])->name('send-contact-email');
+Route::post('/subscribe', [EmailController::class, 'subscribe'])->name('newsletter.subscribe');

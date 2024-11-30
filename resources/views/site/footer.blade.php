@@ -5,7 +5,8 @@
         <div class="newsletter">
             <h2>Bizden Haberdar Ol!</h2>
             <div class="newsletter-text">
-                <form action="/subscribe" method="POST" class="newsletter-form">
+            <form action="{{ route('newsletter.subscribe') }}" method="POST" class="newsletter-form">
+            @csrf
                     <input type="email" name="email" placeholder="Email adresi" required>
                     <button type="submit">Gönder</button>
                 </form>
