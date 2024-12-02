@@ -23,7 +23,7 @@ class EmailController extends Controller
 
         // Send the email
         Mail::send([], [], function ($message) use ($data) {
-            $message->to('heischatgptpro@gmail.com') // Replace with your email address
+            $message->to('infosanayitostcusu@gmail.com') // Replace with your email address
                     ->subject('Franchise') // Subject of the email
                     ->from($data['email'], $data['first_name'] . ' ' . $data['last_name'])
                     ->text("Name: {$data['first_name']} {$data['last_name']}\n
@@ -52,7 +52,7 @@ class EmailController extends Controller
 
         // Send email
         Mail::send([], [], function ($message) use ($data) {
-            $message->to('agdemirhalim4@gmail.com') // Replace with your email address
+            $message->to('infosanayitostcusu@gmail.com') // Replace with your email address
                     ->subject('İletişim') // Email subject
                     ->from($data['email'], $data['name']) // Sender's email and name
                     ->text("Name: {$data['name']}\nEmail: {$data['email']}\nMessage: {$data['message']}"); // Email content
@@ -73,7 +73,7 @@ class EmailController extends Controller
 
     // Send the newsletter subscription email
     Mail::send([], [], function ($message) use ($email) {
-        $message->to('agdemirhalim4@gmail.com') // Replace with your email address
+        $message->to('infosanayitostcusu@gmail.com') // Replace with your email address
                 ->subject('Newsletter') // Email subject
                 ->from($email, 'Newsletter Subscriber') // Subscriber's email
                 ->text("A new user has subscribed to the newsletter.\n\nSubscriber Email: {$email}"); // Email content
